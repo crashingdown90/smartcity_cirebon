@@ -131,10 +131,10 @@ export default function Presentation() {
                     >
                         <div className="flex justify-center gap-4 mb-12 overflow-hidden">
                             <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.3 }}>
-                                <Tag color="amber">Executive Strategic Proposal</Tag>
+                                <Tag color="amber">Dokumen Rencana Strategis</Tag>
                             </motion.div>
                             <motion.div initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: 0.4 }}>
-                                <Tag color="slate">Pemerintah Kota Cirebon</Tag>
+                                <Tag color="slate">Pemerintah Daerah Kota Cirebon</Tag>
                             </motion.div>
                         </div>
 
@@ -148,13 +148,13 @@ export default function Presentation() {
                                 <div className="w-32 h-44 sm:w-40 sm:h-56 md:w-48 md:h-64 rounded-[2.5rem] bg-white border-[6px] border-white shadow-2xl relative overflow-hidden flex items-center justify-center z-10 rotate-[-4deg] hover:rotate-0 transition-transform duration-700">
                                     <Image src="/Walikota.png" alt="Wali Kota Cirebon" fill className="object-cover" />
                                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/70 to-transparent p-4 flex flex-col items-center">
-                                        <div className="text-white font-black text-[9px] tracking-widest uppercase text-center leading-tight">Pimpinan Daerah 01</div>
+                                        <div className="text-white font-black text-[9px] tracking-widest uppercase text-center leading-tight">Wali Kota Cirebon</div>
                                     </div>
                                 </div>
                                 <div className="w-32 h-44 sm:w-40 sm:h-56 md:w-48 md:h-64 rounded-[2.5rem] bg-white border-[6px] border-white shadow-2xl relative overflow-hidden flex items-center justify-center mt-8 md:mt-12 -ml-8 md:-ml-12 rotate-[4deg] hover:rotate-0 transition-transform duration-700 hover:z-20">
                                     <Image src="/Wakil_Walikota.png" alt="Wakil Wali Kota Cirebon" fill className="object-cover" />
                                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/70 to-transparent p-4 flex flex-col items-center">
-                                        <div className="text-white font-black text-[9px] tracking-widest uppercase">Pimpinan Daerah 02</div>
+                                        <div className="text-white font-black text-[9px] tracking-widest uppercase text-center leading-tight">Wakil Wali Kota Cirebon</div>
                                     </div>
                                 </div>
                             </motion.div>
@@ -175,7 +175,7 @@ export default function Presentation() {
                                     animate={{ opacity: 1 }}
                                     transition={{ delay: 0.8 }}
                                 >
-                                    Arsitektur Masa Depan Tata Kelola Digital Berlandaskan <i>Integritas & Kemanusiaan.</i>
+                                    Grand Design Tata Kelola Pemerintahan Digital Berbasis <i>Integritas & Pelayanan Publik Paripurna.</i>
                                 </motion.p>
                                 <motion.div 
                                     className="flex gap-4 items-center justify-center lg:justify-start"
@@ -196,7 +196,7 @@ export default function Presentation() {
         // Slide 2: Instruksi Presiden
         {
             content: (
-                <SlideWrapper title="Mandat Nasional & Arahan Tertinggi" subtitle="Penegakan SPBE & Reformasi Birokrasi" icon={ShieldCheck}>
+                <SlideWrapper title="Arahan Strategis Nasional" subtitle="Implementasi Sistem Pemerintahan Berbasis Elektronik (SPBE)" icon={ShieldCheck}>
                     <div className="flex flex-col gap-6 max-w-7xl mx-auto pb-10">
                         {/* Top Header Banner for Perpres */}
                         <motion.div 
@@ -210,14 +210,14 @@ export default function Presentation() {
                             </div>
                             <div className="relative z-10 flex-1">
                                 <div className="flex flex-wrap items-center gap-4 mb-4">
-                                    <Tag color="amber">Regulasi Pengikat</Tag>
+                                    <Tag color="amber">Dasar Hukum Utama</Tag>
                                     <div className="text-slate-400 font-bold text-sm tracking-widest uppercase">Perpres No. 82 Tahun 2023</div>
                                 </div>
                                 <h3 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
-                                    Percepatan Transformasi Digital <span className="text-amber-500">Keterpaduan Layanan Nasional.</span>
+                                    Percepatan Transformasi Digital dan <span className="text-amber-500">Keterpaduan Layanan Nasional.</span>
                                 </h3>
                                 <p className="text-slate-300 text-base md:text-lg font-medium leading-relaxed italic border-l-4 border-slate-700 pl-4">
-                                    &quot;Pemerintah Daerah dilarang keras membangun aplikasi baru yang parsial dan tumpang tindih.&quot;
+                                    &quot;Pemerintah Daerah diinstruksikan untuk menghentikan pembangunan aplikasi baru yang bersifat sektoral (parsial) guna mencegah tumpang tindih infrastruktur sistem informasi.&quot;
                                 </p>
                             </div>
                             <div className="relative z-10 w-full md:w-auto shrink-0 flex justify-center">
@@ -228,39 +228,39 @@ export default function Presentation() {
                         </motion.div>
 
                         <div className="grid md:grid-cols-2 gap-6">
-                            <Card title="Urgensi: Moratorium Aplikasi" icon={ShieldAlert} delay={0.2} variant="warning">
+                            <Card title="Kebijakan Moratorium Aplikasi Sektoral" icon={ShieldAlert} delay={0.2} variant="warning">
                                 <div className="flex flex-col h-full space-y-6">
                                     <p className="text-lg font-bold text-slate-800 leading-snug">
-                                        Instruksi Presiden RI untuk menebas <i>Silo Mentality</i> birokrasi digital daerah.
+                                        Arahan Presiden RI dalam rangka menghapus ego sektoral (<i className="text-slate-500 font-medium">Silo Mentality</i>) pada digitalisasi daerah.
                                     </p>
                                     <ul className="space-y-4 text-[14px] font-semibold text-slate-600 flex-1">
-                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Stop pembuatan aplikasi pemda baru yang spesifik pada satu dinas.</span></li>
-                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Konsolidasi 27.000 aplikasi nasional yang redundan dan membagi fokus layanan.</span></li>
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Penghentian pengembangan aplikasi baru yang hanya melayani fungsi spesifik tata usaha satu Organisasi Perangkat Daerah (OPD).</span></li>
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Rasionalisasi atas 27.000 aplikasi secara nasional yang dinilai redundan serta memecah fokus pelayanan publik.</span></li>
                                     </ul>
                                     <div className="bg-rose-50/80 rounded-2xl p-4 border border-rose-100 flex items-center gap-4 mt-auto">
                                         <ShieldAlert className="text-rose-500 shrink-0" size={28} />
                                         <div>
-                                            <div className="text-rose-900 font-black text-[10px] tracking-widest uppercase mb-1">Status Nasional</div>
-                                            <div className="text-rose-700 font-bold text-sm leading-none">Fase Reduksi Aplikasi Aktif</div>
+                                            <div className="text-rose-900 font-black text-[10px] tracking-widest uppercase mb-1">Status Kepatuhan Daerah</div>
+                                            <div className="text-rose-700 font-bold text-sm leading-none">Fase Konsolidasi Sistem Berjalan</div>
                                         </div>
                                     </div>
                                 </div>
                             </Card>
 
-                            <Card title="Solusi: INA Digital (GovTech)" icon={Globe} delay={0.3} variant="blue">
+                            <Card title="Penyelenggaraan Portal Nasional (GovTech)" icon={Globe} delay={0.3} variant="blue">
                                 <div className="flex flex-col h-full space-y-6">
                                     <p className="text-lg font-bold text-slate-800 leading-snug">
-                                        Pembentukan Satu Portal Nasional terintegrasi. Wajib terkoneksi dengan portal daerah.
+                                        Integrasi arsitektur layanan daerah ke dalam satu Portal Pelayanan Publik Nasional yang terpusat.
                                     </p>
                                     <ul className="space-y-4 text-[14px] font-semibold text-slate-600 flex-1">
-                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Sektor Prioritas Integrasi: Kesehatan, Pendidikan, Adminduk & Bantuan Sosial.</span></li>
-                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Penerapan Ekosistem Identitas Digital Tunggal (IKD) untuk Single Sign-On (SSO).</span></li>
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Fokus Layanan Dasar Prioritas: Kesehatan, Pendidikan, Administrasi Kependudukan, dan Bantuan Sosial.</span></li>
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Implementasi Identitas Kependudukan Digital (IKD) sebagai infrastruktur utama akses terintegrasi (<i>Single Sign-On</i>).</span></li>
                                     </ul>
                                     <div className="bg-blue-50/80 rounded-2xl p-4 border border-blue-100 flex items-center gap-4 mt-auto">
                                         <Globe className="text-blue-500 shrink-0" size={28} />
                                         <div>
-                                            <div className="text-blue-900 font-black text-[10px] tracking-widest uppercase mb-1">Target Sinkronisasi Daerah</div>
-                                            <div className="text-blue-700 font-bold text-sm leading-none">Batas Akhir Berjalan: Agustus 2025</div>
+                                            <div className="text-blue-900 font-black text-[10px] tracking-widest uppercase mb-1">Target Sinkronisasi Pemerintah Daerah</div>
+                                            <div className="text-blue-700 font-bold text-sm leading-none">Tenggat Waktu: Agustus 2025</div>
                                         </div>
                                     </div>
                                 </div>
@@ -273,17 +273,17 @@ export default function Presentation() {
         // Slide 3: Arsitektur SPBE & Kinerja
         {
             content: (
-                <SlideWrapper title="Pedoman Strategis Kemendagri" subtitle="Sinkronisasi Arsitektur SPBE & Kinerja Eksekutif" icon={Landmark}>
+                <SlideWrapper title="Pedoman Strategis Kementerian Dalam Negeri" subtitle="Sinkronisasi Arsitektur SPBE & Kinerja Eksekutif" icon={Landmark}>
                     <div className="grid md:grid-cols-12 gap-8 h-full items-center max-w-7xl mx-auto pb-10">
                         <div className="md:col-span-5 space-y-6">
-                            <Card title="Satu Arsitektur Nasional" icon={Network} delay={0.1}>
+                            <Card title="Penerapan Arsitektur SPBE Nasional" icon={Network} delay={0.1}>
                                 <p className="mb-6 text-slate-600 leading-relaxed font-medium">
-                                    Birokrasi digital tidak lagi berbasis &quot;keinginan sektoral&quot;. Wajib mematuhi <strong>Peta Jalan Arsitektur SPBE Nasional</strong> Kemenpan-RB.
+                                    Pengembangan layanan digital aparatur negara diwajibkan untuk berpedoman penuh pada <strong>Peta Jalan Arsitektur SPBE Nasional</strong> yang ditetapkan oleh Kementerian PANRB.
                                 </p>
                                 <div className="p-5 bg-slate-50/80 rounded-2xl border-l-[6px] border-amber-500 relative group overflow-hidden">
-                                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2"><Lock size={12}/> Mandat Penganggaran</p>
+                                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center gap-2"><Lock size={12}/> Rasionalisasi Anggaran TIK</p>
                                     <p className="text-sm font-bold text-slate-800 leading-relaxed">
-                                        &quot;Setiap Rupiah APBD untuk IT harus terjustifikasi dalam dokumen arsitektur digital yang terintegrasi.&quot;
+                                        &quot;Setiap alokasi APBD untuk sektor Teknologi Informasi dan Komunikasi (TIK) harus terjustifikasi secara akuntabel dalam dokumen arsitektur digital terintegrasi.&quot;
                                     </p>
                                 </div>
                             </Card>
@@ -303,13 +303,13 @@ export default function Presentation() {
                                     </div>
                                     <div className="text-center md:text-left">
                                         <div className="inline-block px-4 py-1.5 bg-emerald-500/20 text-emerald-400 rounded-full font-black text-[10px] uppercase tracking-widest mb-4 border border-emerald-500/30">
-                                            Indikator Kinerja Wali Kota
+                                            Indikator Kinerja Kepala Daerah
                                         </div>
                                         <h4 className="text-3xl md:text-4xl font-black text-white tracking-tighter leading-tight mb-4">
-                                            Skor Kematangan SPBE <span className="text-emerald-500">Nasional</span>
+                                            Indeks Kematangan SPBE <span className="text-emerald-500">Nasional</span>
                                         </h4>
                                         <p className="text-slate-400 font-medium leading-relaxed italic text-sm md:text-base">
-                                            Skor kematangan SPBE bukan sebatas rapor teknis, melainkan barometer utama kecakapan Pimpinan Daerah dalam mengorkestrasi tata kelola pemerintahan yang bersih dan lincah.
+                                            Indeks kematangan SPBE merupakan barometer utama evaluasi kinerja Pimpinan Daerah dalam mengorkestrasikan tata kelola pemerintahan yang transparan, akuntabel, dan adaptif.
                                         </p>
                                     </div>
                                 </div>
@@ -322,47 +322,47 @@ export default function Presentation() {
         // Slide 4: Janji Politik & Visi Cirebon (SETARA)
         {
             content: (
-                <SlideWrapper title="Janji Politik & Visi Cirebon" subtitle="Menerjemahkan SETARA 2024-2029 ke dalam Sistem" icon={Lightbulb}>
+                <SlideWrapper title="Visi Misi dan Program Prioritas Kepala Daerah" subtitle="Manifestasi Program SETARA 2024-2029 melalui Ekosistem Digital" icon={Lightbulb}>
                     <div className="flex flex-col gap-6 h-full max-w-7xl mx-auto pb-10">
                         <div className="p-10 md:p-14 bg-gradient-to-br from-slate-950 to-slate-900 rounded-[3rem] text-white relative overflow-hidden shadow-2xl border-b-[8px] md:border-b-[14px] border-amber-500 group">
                             <div className="absolute right-0 top-0 opacity-[0.04] scale-150 transform -translate-y-1/4 translate-x-1/4 group-hover:scale-125 transition-transform duration-[3s] pointer-events-none">
                                 <Target size={600} />
                             </div>
-                            <Tag color="amber">Visi Cirebon SETARA</Tag>
+                            <Tag color="amber">Visi Kota Cirebon: SETARA</Tag>
                             <h3 className="text-4xl md:text-6xl font-black mb-4 mt-8 relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-600 tracking-tighter leading-tight drop-shadow-lg">
-                                Sinergi Aspiratif, Tertib, & Juara
+                                Sinergi, Aspiratif, Tertib, dan Juara
                             </h3>
                             <div className="grid md:grid-cols-2 gap-8 relative z-10 mt-6 md:mt-10">
                                 <div className="p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
                                     <div className="flex items-center gap-4 mb-4">
                                         <div className="p-2.5 bg-amber-500/20 rounded-xl text-amber-400"><HeartHandshake size={24} /></div>
-                                        <h4 className="font-bold text-xl">Kartu Kasih Sayang</h4>
+                                        <h4 className="font-bold text-xl">Program Kartu Kasih Sayang</h4>
                                     </div>
                                     <p className="text-slate-300 font-medium text-sm leading-relaxed">
-                                        Mewujudkan mitigasi kemiskinan dan kesejahteraan sosial yang tepat sasaran dengan bersandar murni pada fondasi "Satu Data Cirebon" yang akurat.
+                                        Optimalisasi program pengentasan kemiskinan dan pemenuhan layanan kesejahteraan sosial yang presisi, bertumpu pada validitas fondasi &quot;Satu Data Cirebon&quot;.
                                     </p>
                                 </div>
                                 <div className="p-6 bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10">
                                     <div className="flex items-center gap-4 mb-4">
                                         <div className="p-2.5 bg-emerald-500/20 rounded-xl text-emerald-400"><MessageSquare size={24} /></div>
-                                        <h4 className="font-bold text-xl">Respons Cepat Warga</h4>
+                                        <h4 className="font-bold text-xl">Layanan Respons Cepat Masyarakat</h4>
                                     </div>
                                     <p className="text-slate-300 font-medium text-sm leading-relaxed">
-                                        Sistem aduan real-time terintegrasi yang memastikan setiap aspirasi dan keluhan warga dijawab dan diselesaikan dalam tempo waktu yang terukur (SLA).
+                                        Sistem penanganan pengaduan masyarakat seketika (<i>real-time</i>) terpadu, menjamin tindak lanjut aspirasi sesuai dengan Standar Pelayanan Minimal (SPM) dan <i>Service Level Agreement</i> (SLA).
                                     </p>
                                 </div>
                             </div>
                         </div>
                         
                         <div className="grid md:grid-cols-3 gap-6">
-                            <Card title="Akurasi Data Bansos" icon={Database} delay={0.2}>
-                                <p className="text-sm font-medium text-slate-700 leading-relaxed">Algoritma cerdas yang mencegah <em>double-funding</em> dan salah sasaran dengan mencocokkan NIK, Data DTKS, dan profil pajak daerah secara otomatis.</p>
+                            <Card title="Presisi Data Bantuan Sosial" icon={Database} delay={0.2}>
+                                <p className="text-sm font-medium text-slate-700 leading-relaxed">Implementasi komputasi cerdas guna mencegah duplikasi anggaran (<i>double-funding</i>) melalui validasi silang NIK, data DTKS, serta basis data kewajiban pajak daerah.</p>
                             </Card>
-                            <Card title="Birokrasi Melayani" icon={Users} delay={0.3} variant="blue">
-                                <p className="text-sm font-medium text-slate-700 leading-relaxed">Mengubah paradigma ASN dari administratir murni menjadi pelayan publik yang responsif lewat modul <i>Citizen Care</i>.</p>
+                            <Card title="Reformasi Layanan Birokrasi" icon={Users} delay={0.3} variant="blue">
+                                <p className="text-sm font-medium text-slate-700 leading-relaxed">Transformasi budaya kerja Aparatur Sipil Negara (ASN) menuju orientasi pelayanan publik prima yang adaptif dan proaktif.</p>
                             </Card>
-                            <Card title="Efisiensi Anggaran" icon={TrendingUp} delay={0.4} variant="highlight">
-                                <p className="text-sm font-medium text-slate-700 leading-relaxed">Penghematan APBD lewat konsolidasi infrastruktur digital, memungkinkan dana TIK dialihkan untuk program pro-rakyat.</p>
+                            <Card title="Efisiensi Belanja Daerah" icon={TrendingUp} delay={0.4} variant="highlight">
+                                <p className="text-sm font-medium text-slate-700 leading-relaxed">Rasionalisasi APBD melalui konsolidasi infrastruktur digital, sehingga relokasi anggaran TIK dapat difokuskan pada program pemberdayaan masyarakat.</p>
                             </Card>
                         </div>
                     </div>
@@ -372,12 +372,12 @@ export default function Presentation() {
         // Slide 5: Peran Sentral DKIS
         {
             content: (
-                <SlideWrapper title="Peran Sentral DKIS Cirebon" subtitle="Orkestrator Utama Arus Data Smart City" icon={Network}>
+                <SlideWrapper title="Kedudukan Strategis DKIS Kota Cirebon" subtitle="Orkestrator Utama Ekosistem Smart City" icon={Network}>
                     <div className="grid md:grid-cols-12 gap-10 h-full items-center max-w-7xl mx-auto pb-10">
                         <div className="md:col-span-5 space-y-8">
                             <div className="space-y-4">
-                                <h3 className="text-4xl md:text-5xl font-black text-emerald-900 leading-none tracking-tighter underline decoration-amber-500 decoration-[8px] underline-offset-8 drop-shadow-sm">Bukan Sekadar Tim Teknis.</h3>
-                                <p className="text-xl md:text-2xl text-slate-500 font-bold leading-tight">Melainkan <strong>Dirijen (Orkestrator)</strong> utama seluruh aliran data strategis kota Cirebon.</p>
+                                <h3 className="text-4xl md:text-5xl font-black text-emerald-900 leading-none tracking-tighter underline decoration-amber-500 decoration-[8px] underline-offset-8 drop-shadow-sm">Penggerak Transformasi Digital Daerah.</h3>
+                                <p className="text-xl md:text-2xl text-slate-500 font-bold leading-tight">Berperan sebagai pengampu dan <strong>Koordinator Utama</strong> dalam integrasi serta interoperabilitas tata kelola data strategis Pemerintah Kota Cirebon.</p>
                             </div>
                             <div className="grid grid-cols-1 gap-5">
                                 <div className="flex items-center gap-5 p-5 bg-white border border-slate-200 rounded-3xl shadow-lg shadow-slate-200/50 group hover:-translate-y-1 transition-transform">
@@ -386,7 +386,7 @@ export default function Presentation() {
                                     </div>
                                     <div>
                                         <div className="font-black text-slate-900 text-lg">Command Center 24/7</div>
-                                        <div className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-0.5">Mata & Telinga Kota</div>
+                                        <div className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-0.5">Pusat Kendali Operasional</div>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-5 p-5 bg-white border border-slate-200 rounded-3xl shadow-lg shadow-slate-200/50 group hover:-translate-y-1 transition-transform">
@@ -395,7 +395,7 @@ export default function Presentation() {
                                     </div>
                                     <div>
                                         <div className="font-black text-slate-900 text-lg">Intranet Fiber Optik</div>
-                                        <div className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-0.5">Tulang Punggung OPD</div>
+                                        <div className="text-slate-500 text-xs font-bold uppercase tracking-widest mt-0.5">Infrastruktur Jaringan Pemerintahan</div>
                                     </div>
                                 </div>
                             </div>
@@ -411,10 +411,10 @@ export default function Presentation() {
                                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10 z-0" />
                                 
                                 <div className="relative z-20 h-full flex flex-col p-6 md:p-10">
-                                    <div className="flex justify-between items-center mb-auto">
+                                        <div className="flex justify-between items-center mb-auto">
                                         <div className="flex items-center gap-3">
                                             <div className="w-3 h-3 rounded-full bg-rose-500 animate-pulse" />
-                                            <span className="text-rose-500 font-mono text-xs font-bold tracking-widest uppercase">Live System</span>
+                                            <span className="text-rose-500 font-mono text-xs font-bold tracking-widest uppercase">Sistem Pemantauan Aktual</span>
                                         </div>
                                         <div className="px-3 py-1 border border-slate-700 rounded-full text-slate-500 font-mono text-[10px]">C4ISR DASHBOARD</div>
                                     </div>
@@ -424,9 +424,9 @@ export default function Presentation() {
                                             <div className="absolute inset-0 rounded-full border border-emerald-400/50 animate-ping" style={{ animationDuration: '3s' }} />
                                             <Cpu size={64} className="text-emerald-400" />
                                         </div>
-                                        <h4 className="text-white text-3xl md:text-5xl font-black tracking-tighter mb-4">INTEGRATED <span className="text-emerald-400">IOC</span></h4>
+                                        <h4 className="text-white text-3xl md:text-5xl font-black tracking-tighter mb-4">PUSAT KENDALI <span className="text-emerald-400">TERINTEGRASI</span></h4>
                                         <p className="text-slate-300 text-xs md:text-sm font-medium tracking-widest uppercase opacity-80 max-w-sm">
-                                            Pemantauan CCTV, Traffic, Sensor IoT, dan Alert Kedauratan Kota secara terpusat.
+                                            Monitoring kamera pengawas (CCTV), manajemen lalu lintas, sensor IoT, serta sistem peringatan dini kedaruratan kota yang terpusat dan terpadu.
                                         </p>
                                     </div>
 
@@ -451,7 +451,7 @@ export default function Presentation() {
         // Slide 6: Peta Ekosistem Kelembagaan
         {
             content: (
-                <SlideWrapper title="Peta Ekosistem Kelembagaan" subtitle="Tantangan Penyatuan Antar Instansi Daerah" icon={Building2}>
+                <SlideWrapper title="Peta Ekosistem Instansi Pemerintah Daerah" subtitle="Tantangan Konsolidasi Antar Perangkat Daerah" icon={Building2}>
                     <div className="flex flex-col h-full gap-8 max-w-7xl mx-auto pb-10">
                         {/* Node Architecture Visualization */}
                         <div className="bg-slate-50 border border-slate-200 rounded-[3rem] p-8 md:p-12 relative overflow-hidden flex-1 shadow-sm">
@@ -461,22 +461,22 @@ export default function Presentation() {
                                     <div className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm relative z-20 hover:scale-105 transition-transform origin-left">
                                         <div className="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center shrink-0"><Building2 size={24} /></div>
                                         <div>
-                                            <p className="font-black text-slate-800 text-lg">18 Dinas</p>
-                                            <p className="text-xs text-slate-500 font-medium">Kesehatan, Pendidikan, PUPR, dll.</p>
+                                            <p className="font-black text-slate-800 text-lg">18 Dinas Daerah</p>
+                                            <p className="text-xs text-slate-500 font-medium">Dinas Kesehatan, Dinas Pendidikan, DPUTR, dll.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm relative z-20 hover:scale-105 transition-transform origin-left">
                                         <div className="w-12 h-12 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center shrink-0"><Landmark size={24} /></div>
                                         <div>
-                                            <p className="font-black text-slate-800 text-lg">5+ Badan/Setda</p>
-                                            <p className="text-xs text-slate-500 font-medium">Bappelitbangda, BKD, Setda.</p>
+                                            <p className="font-black text-slate-800 text-lg">Badan & Sekretariat</p>
+                                            <p className="text-xs text-slate-500 font-medium">Bappelitbangda, BKPSDM, Setda.</p>
                                         </div>
                                     </div>
                                     <div className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-200 shadow-sm relative z-20 hover:scale-105 transition-transform origin-left">
                                         <div className="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center shrink-0"><TrendingUp size={24} /></div>
                                         <div>
-                                            <p className="font-black text-slate-800 text-lg">5 BUMD</p>
-                                            <p className="text-xs text-slate-500 font-medium">Perumda Air Minum, Pasar, BPR.</p>
+                                            <p className="font-black text-slate-800 text-lg">Badan Usaha Milik Daerah</p>
+                                            <p className="text-xs text-slate-500 font-medium">Perumda Air Minum, Perumda Pasar, BPR.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -489,8 +489,8 @@ export default function Presentation() {
                                     <div className="w-full max-w-[280px] aspect-square rounded-full bg-slate-900 border-8 border-white shadow-2xl flex flex-col items-center justify-center text-center p-8 relative">
                                         <div className="absolute inset-0 rounded-full border border-emerald-500/30 animate-ping" style={{ animationDuration: '4s' }} />
                                         <Database size={48} className="text-emerald-400 mb-4" />
-                                        <p className="font-black text-white text-xl leading-tight">Satu Data<br/>Kota Cirebon</p>
-                                        <p className="text-[9px] text-slate-400 tracking-widest uppercase mt-2">Pusat Konsolidasi</p>
+                                        <p className="font-black text-white text-xl leading-tight">Pusat Data Terpadu<br/>Kota Cirebon</p>
+                                        <p className="text-[9px] text-slate-400 tracking-widest uppercase mt-2">Simpul Integrasi Informasi</p>
                                     </div>
                                 </div>
                             </div>
@@ -505,14 +505,14 @@ export default function Presentation() {
                         </div>
 
                         <div className="mt-2">
-                            <Card title="Tantangan Transformasi: Mengikis Silo Mentality" icon={ShieldAlert} delay={0.4} variant="warning">
+                            <Card title="Tantangan Transformasi: Eliminasi Ego Sektoral (Silo Mentality)" icon={ShieldAlert} delay={0.4} variant="warning">
                                 <div className="flex flex-col md:flex-row items-center gap-8 p-2 md:p-4">
                                     <div className="flex-1">
                                         <p className="text-xl md:text-2xl font-black text-rose-950 mb-3 tracking-tighter leading-tight italic border-l-4 border-rose-500 pl-4">
-                                            &quot;Menyatukan 27 'Kepala' instansi dengan ego sektoral yang berbeda adalah tantangan birokrasi terbesar.&quot;
+                                            &quot;Sinergitas segenap pimpinan instansi dalam menekan ego sektoral merupakan prasyarat mutlak keberhasilan tata kelola pemerintahan digital.&quot;
                                         </p>
                                         <p className="text-sm md:text-base text-rose-800/80 font-bold leading-relaxed">
-                                            Kegagalan digitalisasi pemerintahan jarang disebabkan oleh teknologi, melainkan keengganan instansi untuk <strong>berbagi data</strong>. Kepemimpinan Kepala Daerah mutlak diperlukan untuk memaksa integrasi ini.
+                                            Hambatan utama transformasi digital birokrasi bukan sekadar pada aspek teknologi, melainkan keengganan institusional dalam proses <strong>bagi pakai data</strong> (<i>data sharing</i>). Komitmen tegak lurus dari Kepala Daerah selaku Pejabat Pembina Kepegawaian (PPK) sangat esensial untuk menjamin sinkronisasi ini.
                                         </p>
                                     </div>
                                     <div className="w-24 h-24 md:w-32 md:h-32 rounded-3xl bg-rose-600/10 border border-rose-500/20 flex items-center justify-center text-rose-600 shrink-0 transform -rotate-3 hover:rotate-0 transition-transform">
@@ -528,19 +528,19 @@ export default function Presentation() {
         // Slide 7: App Fatigue
         {
             content: (
-                <SlideWrapper title="Maturitas Aplikasi Eksisting" subtitle="Evaluasi & Kritik Konstruktif: Mencegah Kelelahan Digital" icon={Smartphone}>
+                <SlideWrapper title="Evaluasi Maturitas Layanan Elektronik Eksisting" subtitle="Tinjauan Kritis Layanan Publik: Indikasi Kelelahan Digital (App Fatigue)" icon={Smartphone}>
                     <div className="flex flex-col gap-8 h-full max-w-7xl mx-auto pb-10 pt-2">
                         <div className="grid md:grid-cols-3 gap-6 mb-4">
                             <Card title="Cirebon Siaga 112" icon={ShieldCheck} delay={0.1} variant="blue">
-                                <p className="text-sm font-bold text-slate-600">Success Story: Layanan kedaruratan terpadu bebas pulsa.</p>
+                                <p className="text-sm font-bold text-slate-600">Pencapaian: Layanan panggilan kedaruratan terpadu berskala kota.</p>
                                 <div className="mt-4 flex gap-2"><Tag color="blue">Aktif</Tag><Tag color="slate">Terpusat</Tag></div>
                             </Card>
                             <Card title="Portal I-Cirebon" icon={Share2} delay={0.2} variant="blue">
-                                <p className="text-sm font-bold text-slate-600">Literasi Digital: Akses perpustakaan daerah dalam genggaman.</p>
-                                <div className="mt-4 flex gap-2"><Tag color="blue">Aktif</Tag><Tag color="slate">Informasi</Tag></div>
+                                <p className="text-sm font-bold text-slate-600">Literasi Digital: Optimalisasi akses perpustakaan daerah secara elektronik.</p>
+                                <div className="mt-4 flex gap-2"><Tag color="blue">Aktif</Tag><Tag color="slate">Informasi Publik</Tag></div>
                             </Card>
                             <Card title="Brojol Aja Klalen" icon={FileText} delay={0.3} variant="blue">
-                                <p className="text-sm font-bold text-slate-600">Efficiency: Percepatan Adminduk instan dari Disdukcapil.</p>
+                                <p className="text-sm font-bold text-slate-600">Efisiensi Birokrasi: Percepatan administrasi kependudukan dari Disdukcapil Kota Cirebon.</p>
                                 <div className="mt-4 flex gap-2"><Tag color="blue">Aktif</Tag><Tag color="slate">Layanan Dasar</Tag></div>
                             </Card>
                         </div>
@@ -556,23 +556,23 @@ export default function Presentation() {
                             <div className="relative z-10 flex-1 space-y-6">
                                 <div className="flex items-center gap-3">
                                     <div className="px-4 py-1.5 bg-rose-500/20 text-rose-300 rounded-full font-black text-xs uppercase tracking-widest border border-rose-500/30 flex items-center gap-2">
-                                        <AlertTriangle size={14} /> Critical Diagnosis
+                                        <AlertTriangle size={14} /> Diagnosis Kritis Tata Kelola
                                     </div>
                                 </div>
                                 <h3 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-none drop-shadow-lg">
-                                    Fenomena <span className="text-rose-400">App Fatigue.</span>
+                                    Fenomena<br className="hidden md:block"/> <span className="text-rose-400">Kelelahan Beraplikasi (App Fatigue).</span>
                                 </h3>
                                 <p className="text-rose-100/90 text-lg md:text-xl font-medium leading-relaxed max-w-2xl">
-                                    Warga jenuh mendaftar akun berulang kali di puluhan aplikasi dinas yang terpisah. Menghasilkan redundansi akun dan keengganan menggunakan layanan digital pemerintah.
+                                    Masyarakat dibebani keharusan registrasi berulang pada puluhan aplikasi Perangkat Daerah yang belum saling terintegrasi. Hal ini berdampak langsung pada redundansi kredensial dan keengganan publik mengadopsi layanan SPBE daerah.
                                 </p>
                                 <div className="flex flex-wrap gap-4 pt-4">
                                     <div className="px-5 py-3 bg-rose-900/50 rounded-2xl border border-rose-500/30 backdrop-blur-md">
-                                        <div className="text-rose-300 text-xs font-black uppercase tracking-widest mb-1">Total Aplikasi Sektoral</div>
-                                        <div className="text-white text-3xl font-black">27+ <span className="text-lg font-medium text-rose-400">Aktif</span></div>
+                                        <div className="text-rose-300 text-[10px] md:text-xs font-black uppercase tracking-widest mb-1">Kuantitas Aplikasi Sektoral Daerah</div>
+                                        <div className="text-white text-3xl font-black">27+ <span className="text-lg font-medium text-rose-400">Terdata Aktif</span></div>
                                     </div>
                                     <div className="px-5 py-3 bg-rose-900/50 rounded-2xl border border-rose-500/30 backdrop-blur-md">
-                                        <div className="text-rose-300 text-xs font-black uppercase tracking-widest mb-1">Status Keamanan Identitas</div>
-                                        <div className="text-white text-xl md:text-2xl font-black mt-2">Terfragmentasi</div>
+                                        <div className="text-rose-300 text-[10px] md:text-xs font-black uppercase tracking-widest mb-1">Status Manajemen Identitas Digital</div>
+                                        <div className="text-white text-lg md:text-xl font-black mt-2">Terfragmentasi (Tidak Terpadu)</div>
                                     </div>
                                 </div>
                             </div>
@@ -589,9 +589,9 @@ export default function Presentation() {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-emerald-500 text-white p-6 rounded-[2rem] shadow-2xl border-4 border-slate-900 transform -rotate-12 hover:rotate-0 transition-transform cursor-default">
-                                        <div className="text-[10px] font-black uppercase tracking-widest mb-1">Masa Depan</div>
-                                        <div className="text-2xl font-black leading-none">1 App</div>
+                                    <div className="absolute -bottom-6 -right-6 md:-bottom-10 md:-right-10 bg-emerald-500 text-white p-6 rounded-[2rem] shadow-2xl border-4 border-slate-900 transform -rotate-12 hover:rotate-0 transition-transform cursor-default z-20">
+                                        <div className="text-[10px] font-black uppercase tracking-widest mb-1">Proyeksi Integrasi</div>
+                                        <div className="text-xl md:text-2xl font-black leading-none whitespace-nowrap">Portal Tunggal</div>
                                     </div>
                                 </div>
                             </div>
@@ -603,31 +603,31 @@ export default function Presentation() {
         // Slide 8: Data Lake Architecture
         {
             content: (
-                <SlideWrapper title="Ekosistem Penyatuan Data" subtitle="The Data Lake Funnel: Single Source of Truth" icon={Database}>
+                <SlideWrapper title="Ekosistem Konsolidasi Basis Data" subtitle="Infrastruktur Data Lake: Mewujudkan Single Source of Truth" icon={Database}>
                     <div className="flex flex-col gap-6 h-full max-w-7xl mx-auto pb-10 pt-2">
                         <div className="grid md:grid-cols-4 gap-6 relative z-10">
-                            <Card title="Raw Data Sektoral" icon={FileText} delay={0.1}>
+                            <Card title="Data Mentah Sektoral" icon={FileText} delay={0.1}>
                                 <div className="h-full flex flex-col justify-between">
-                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Integrasi 27 OPD & 5 BUMD Cirebon.</p>
-                                    <div className="flex flex-wrap gap-2"><Tag color="slate">NIK</Tag><Tag color="slate">Medis</Tag><Tag color="slate">Pajak</Tag></div>
+                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Integrasi struktur data dari 27 SKPD dan 5 BUMD Kota Cirebon.</p>
+                                    <div className="flex flex-wrap gap-2"><Tag color="slate">Kependudukan</Tag><Tag color="slate">Kesehatan</Tag><Tag color="slate">Perpajakan</Tag></div>
                                 </div>
                             </Card>
-                            <Card title="Sensor IoT Fisik" icon={Cpu} delay={0.2}>
+                            <Card title="Infrastruktur Sensor IoT" icon={Cpu} delay={0.2}>
                                 <div className="h-full flex flex-col justify-between">
-                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Streaming CCTV & sensor tata ruang 24/7.</p>
-                                    <div className="flex flex-wrap gap-2"><Tag color="slate">ATCS</Tag><Tag color="slate">Banjir</Tag><Tag color="slate">ISPU</Tag></div>
+                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Pemantauan instrumen CCTV dan tata letak spasial secara nirkabel (24/7).</p>
+                                    <div className="flex flex-wrap gap-2"><Tag color="slate">Lalu Lintas</Tag><Tag color="slate">Tinggi Air</Tag><Tag color="slate">Udara</Tag></div>
                                 </div>
                             </Card>
-                            <Card title="Sentimen Publik" icon={MessageSquare} delay={0.3}>
+                            <Card title="Analisis Sentimen Masyarakat" icon={MessageSquare} delay={0.3}>
                                 <div className="h-full flex flex-col justify-between">
-                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Screping NLP opini warga & media lokal.</p>
-                                    <div className="flex flex-wrap gap-2"><Tag color="slate">Sosmed</Tag><Tag color="slate">Aduan</Tag><Tag color="slate">Berita</Tag></div>
+                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Mekanisme komputasional penyerapan aspirasi publik serta pantauan media lokal.</p>
+                                    <div className="flex flex-wrap gap-2"><Tag color="slate">Aduan Publik</Tag><Tag color="slate">Media Sosial</Tag></div>
                                 </div>
                             </Card>
-                            <Card title="Data Spasial GIS" icon={Map} delay={0.4}>
+                            <Card title="Sistem Informasi Geografis" icon={Map} delay={0.4}>
                                 <div className="h-full flex flex-col justify-between">
-                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Titik kemiskinan dan pemetaan aset.</p>
-                                    <div className="flex flex-wrap gap-2"><Tag color="slate">RTRW</Tag><Tag color="slate">Aset</Tag><Tag color="slate">Zonasi</Tag></div>
+                                    <p className="text-xs font-bold text-slate-600 leading-relaxed mb-4">Pemetaan presisi lokus kemiskinan dan inventarisasi aset daerah berbasis GIS.</p>
+                                    <div className="flex flex-wrap gap-2"><Tag color="slate">Zonasi Tata Ruang</Tag><Tag color="slate">Aset Daerah</Tag></div>
                                 </div>
                             </Card>
                         </div>
@@ -663,10 +663,10 @@ export default function Presentation() {
                                     </div>
                                     <div className="flex-1 text-center md:text-left">
                                         <h3 className="text-4xl md:text-6xl font-black mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-300 to-blue-400 tracking-tighter leading-none">
-                                            DATA LAKE CIREBON
+                                            PUSAT DATA TERPADU CIREBON
                                         </h3>
                                         <p className="text-slate-300 text-lg md:text-2xl font-bold leading-relaxed mb-6">
-                                            Integrasi <i>Single Source of Truth</i> yang menghapus batas sektoral.
+                                            Integrasi infrastruktur informasi tunggal (<i>Single Source of Truth</i>) guna mengeliminir ego sektoral.
                                         </p>
                                         <div className="flex flex-wrap justify-center md:justify-start gap-3">
                                             <span className="px-4 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-black text-[10px] uppercase tracking-widest">
@@ -687,12 +687,12 @@ export default function Presentation() {
         // Slide 9: The Smart Brain Engine (AI)
         {
             content: (
-                <SlideWrapper title="Kecerdasan Buatan Terintegrasi" subtitle="The Smart Brain Engine & Inovasi RAG-NLP" icon={Cpu}>
+                <SlideWrapper title="Pemanfaatan Kecerdasan Buatan (AI) Pemerintahan" subtitle="Sistem Pakar Pengambilan Keputusan (Smart Brain Engine)" icon={Cpu}>
                     <div className="grid md:grid-cols-12 gap-6 pt-2 max-w-7xl mx-auto pb-10 h-full">
                         <div className="md:col-span-5 h-full flex">
-                            <Card title="Pusat Kognisi Kota" icon={Cpu} delay={0.1}>
+                            <Card title="Pusat Komputasi Kognitif Daerah" icon={Cpu} delay={0.1}>
                                 <div className="flex flex-col h-full space-y-6">
-                                    <p className="text-slate-600 font-bold leading-relaxed">Penerapan AI bukan sekadar gimik teknologi, melainkan pisau bedah analitik untuk mengurai kompleksitas tata otonomi daerah Cirebon secara presisi.</p>
+                                    <p className="text-slate-600 font-bold leading-relaxed">Implementasi Kecerdasan Buatan merupakan instrumen analitis strategis guna mengurai kompleksitas penyelenggaraan otonomi daerah secara komprehensif dan presisi.</p>
                                     <div className="bg-slate-950 rounded-3xl p-6 mt-auto border border-slate-800 relative overflow-hidden group">
                                         <div className="absolute inset-0 bg-gradient-to-tr from-emerald-900/30 to-blue-900/30" />
                                         <div className="relative z-10 flex flex-col items-center text-center">
@@ -711,46 +711,46 @@ export default function Presentation() {
                                 <motion.div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
                                     <div className="flex items-center gap-4 mb-3">
                                         <div className="p-2.5 bg-emerald-50 rounded-xl text-emerald-600"><Camera size={20} /></div>
-                                        <h4 className="font-black text-slate-800">Traffic Brain (ATCS)</h4>
+                                        <h4 className="font-black text-slate-800">Manajemen Lalu Lintas Cerdas (ATCS)</h4>
                                     </div>
-                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Otomasi Computer Vision YOLOv8 mengurai kemacetan eks-Terminal Gunung Sari secara otonom.</p>
+                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Automasi rekayasa lalu lintas berbasis Computer Vision guna mengurai simpul kemacetan secara otonom.</p>
                                 </motion.div>
                                 <motion.div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.3 }}>
                                     <div className="flex items-center gap-4 mb-3">
                                         <div className="p-2.5 bg-rose-50 rounded-xl text-rose-600"><CloudCog size={20} /></div>
-                                        <h4 className="font-black text-slate-800">EWS Desa Rawan</h4>
+                                        <h4 className="font-black text-slate-800">Sistem Peringatan Dini (EWS) Bencana</h4>
                                     </div>
-                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Prediksi presisi luapan air 48 jam sebelum bencana memicu push-alert evakuasi RT/RW.</p>
+                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Pemodelan prediksi debit air terpadu guna mitigasi risiko hidrometeorologi tingkat kewilayahan.</p>
                                 </motion.div>
                                 <motion.div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }}>
                                     <div className="flex items-center gap-4 mb-3">
                                         <div className="p-2.5 bg-blue-50 rounded-xl text-blue-600"><MessageSquare size={20} /></div>
-                                        <h4 className="font-black text-slate-800">WargiBot LLM</h4>
+                                        <h4 className="font-black text-slate-800">Asisten Virtual Pelayanan Publik</h4>
                                     </div>
-                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Ajudan digital berbasis dokumen Perwali. Menjawab birokrasi dalam 1 detik berakurasi tinggi.</p>
+                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Otomatisasi respons layanan publik berbasis regulasi daerah guna percepatan edukasi aparatur dan masyarakat.</p>
                                 </motion.div>
                                 <motion.div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.5 }}>
                                     <div className="flex items-center gap-4 mb-3">
                                         <div className="p-2.5 bg-amber-50 rounded-xl text-amber-600"><TrendingUp size={20} /></div>
-                                        <h4 className="font-black text-slate-800">Inflation Sentinel</h4>
+                                        <h4 className="font-black text-slate-800">Sistem Pemantauan Inflasi Daerah</h4>
                                     </div>
-                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Mendeteksi anomali suplai sembako TPID dengan sentimen kegelisahan warganet di Sosmed.</p>
+                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Deteksi dini anomali pasokan bahan pokok (TPID) melalui analisis sentimen publik terintegrasi.</p>
                                 </motion.div>
                                 <motion.div className="bg-white p-5 rounded-3xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.6 }}>
                                     <div className="flex items-center gap-4 mb-3">
                                         <div className="p-2.5 bg-purple-50 rounded-xl text-purple-600"><Stethoscope size={20} /></div>
-                                        <h4 className="font-black text-slate-800">Precision Healthcare</h4>
+                                        <h4 className="font-black text-slate-800">Sistem Informasi Kesehatan Presisi</h4>
                                     </div>
-                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Clustering spasial sebaran balita gizi buruk guna memandu intervensi tepat sasaran.</p>
+                                    <p className="text-xs text-slate-600 font-semibold leading-relaxed">Pemetaan spasial prevalensi stunting guna memandu intervensi kebijakan kesehatan yang berorientasi target.</p>
                                 </motion.div>
                                 <motion.div className="bg-emerald-50 p-5 rounded-3xl border border-emerald-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.7 }}>
                                     <div className="absolute right-0 top-0 w-16 h-16 bg-emerald-200/50 rounded-bl-[100px] -z-0" />
                                     <div className="relative z-10">
                                         <div className="flex items-center gap-4 mb-3">
                                             <div className="p-2.5 bg-emerald-100 rounded-xl text-emerald-700"><ShieldCheck size={20} /></div>
-                                            <h4 className="font-black text-emerald-950">Fiscal Leakage Audit</h4>
+                                            <h4 className="font-black text-emerald-950">Audit Kebocoran Fiskal Daerah</h4>
                                         </div>
-                                        <p className="text-xs text-emerald-800 font-bold leading-relaxed">Menambal kebocoran PAD dengan automasi deteksi properti komersial yang membayar pajak hunian.</p>
+                                        <p className="text-xs text-emerald-800 font-bold leading-relaxed">Optimalisasi Pendapatan Asli Daerah (PAD) melalui identifikasi otomatis atas anomali kepatuhan wajib pajak.</p>
                                     </div>
                                 </motion.div>
                             </div>
@@ -762,18 +762,18 @@ export default function Presentation() {
         // Slide 10: Zero Blank Spot
         {
             content: (
-                <SlideWrapper title="Infrastruktur Inklusif Daerah" subtitle="Pemerataan Akses Keadilan Digital" icon={Network}>
+                <SlideWrapper title="Infrastruktur TIK Inklusif Kewilayahan" subtitle="Pemerataan Akses Layanan Digital Bagi Seluruh Lapisan Masyarakat" icon={Network}>
                     <div className="flex flex-col gap-6 h-full max-w-7xl mx-auto pb-10">
                         <div className="p-10 md:p-14 bg-gradient-to-br from-blue-950 to-slate-900 rounded-[3.5rem] text-white relative overflow-hidden shadow-2xl border-l-[10px] md:border-l-[16px] border-blue-500 group flex-1 flex flex-col justify-center">
                             <div className="absolute right-0 top-0 opacity-[0.05] scale-150 transform -translate-y-1/4 translate-x-1/4 group-hover:rotate-12 transition-transform duration-[4s] pointer-events-none">
                                 <Globe size={600} />
                             </div>
-                            <Tag color="blue">Zero Blank Spot 2029</Tag>
+                            <Tag color="blue">Nirkawasan Tanpa Sinyal (Zero Blank Spot) 2029</Tag>
                             <h3 className="text-3xl md:text-5xl font-black mb-6 mt-6 relative z-10 tracking-tight leading-tight max-w-4xl text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-emerald-300">
-                                &quot;Super App sehebat apa pun akan mati, jika warga miskin tak mampu membeli kuota.&quot;
+                                &quot;Akselerasi layanan publik digital wajib diiringi dengan pemenuhan aksesibilitas infrastruktur jaringan bagi masyarakat pra-sejahtera.&quot;
                             </h3>
                             <p className="text-slate-300 text-lg md:text-xl relative z-10 max-w-4xl font-medium leading-relaxed italic pr-4">
-                                Target memerdekakan warga dari kesenjangan digital (*digital divide*). Menginterkoneksikan permukiman padat dan pesisir lewat Jaringan WiFi Publik gratis.
+                                Komitmen komprehensif pengentasan kesenjangan digital (<i>digital divide</i>) melalui penyediaan jaringan internet publik (WiFi) tak berbayar yang difokuskan pada kawasan padat penduduk.
                             </p>
                             
                             <div className="flex flex-col sm:flex-row gap-6 mt-10 relative z-10">
@@ -782,8 +782,8 @@ export default function Presentation() {
                                         <Wifi size={32} />
                                     </div>
                                     <div>
-                                        <div className="text-slate-400 text-[10px] uppercase font-black tracking-widest mb-1">Cakupan Area Ruang Hijau</div>
-                                        <div className="font-bold text-white text-xl">Taman Kota & Alun-Alun</div>
+                                        <div className="text-slate-400 text-[10px] uppercase font-black tracking-widest mb-1">Cakupan Fasilitas Ruang Publik</div>
+                                        <div className="font-bold text-white text-xl">Ruang Terbuka Hijau & Alun-Alun</div>
                                     </div>
                                 </div>
                                 <div className="flex-1 bg-white/5 backdrop-blur-sm border border-white/10 p-6 rounded-[2rem] flex items-center gap-6">
@@ -791,8 +791,8 @@ export default function Presentation() {
                                         <Network size={32} />
                                     </div>
                                     <div>
-                                        <div className="text-slate-400 text-[10px] uppercase font-black tracking-widest mb-1">Cakupan Biokrasi Mikro</div>
-                                        <div className="font-bold text-white text-xl">Balai Kelurahan & Balai RW</div>
+                                        <div className="text-slate-400 text-[10px] uppercase font-black tracking-widest mb-1">Cakupan Fasilitas Kewilayahan</div>
+                                        <div className="font-bold text-white text-xl">Kawasan Kelurahan & Balai RW</div>
                                     </div>
                                 </div>
                             </div>
@@ -804,7 +804,7 @@ export default function Presentation() {
         // Slide 11: 6 Pilar Smart City
         {
             content: (
-                <SlideWrapper title="6 Pilar Utama Smart City" subtitle="Dimensi Keberhasilan Gerakan Menuju 100 Smart City Nasional" icon={Target}>
+                <SlideWrapper title="Pilar Ekosistem Kota Cerdas (Smart City)" subtitle="Indikator Capaian Kinerja Berdasarkan Masterplan Smart City Nasional" icon={Target}>
                     <div className="flex flex-col gap-6 pt-2 h-full max-w-7xl mx-auto pb-10">
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <motion.div className="bg-emerald-50 relative overflow-hidden p-6 rounded-[2.5rem] border border-emerald-200 group hover:-translate-y-2 transition-transform duration-500" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
@@ -812,7 +812,7 @@ export default function Presentation() {
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center mb-6"><Landmark size={28} /></div>
                                     <h4 className="font-black text-2xl text-emerald-950 mb-3 tracking-tight">Smart Governance</h4>
-                                    <p className="text-sm font-bold text-emerald-800/70 leading-relaxed mb-6">Layanan publik terpadu (Super App), efisiensi birokrasi, SIPD, & Open Data.</p>
+                                    <p className="text-sm font-bold text-emerald-800/70 leading-relaxed mb-6">Konsolidasi layanan publik terpadu, efektivitas sistem pemerintahan (SIPD), dan Keterbukaan Informasi Publik.</p>
                                     <div className="flex items-end justify-between border-t border-emerald-200/50 pt-4 mt-auto">
                                         <div className="text-[10px] font-black uppercase tracking-widest text-emerald-600/60">Digitalisasi Layanan</div>
                                         <div className="font-black text-2xl text-emerald-700 font-mono">100%</div>
@@ -825,9 +825,9 @@ export default function Presentation() {
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center mb-6"><Share2 size={28} /></div>
                                     <h4 className="font-black text-2xl text-blue-950 mb-3 tracking-tight">Smart Branding</h4>
-                                    <p className="text-sm font-bold text-blue-800/70 leading-relaxed mb-6">Wajah digital kota, promosi pariwisata Keraton, & UMKM lokal ke level global.</p>
+                                    <p className="text-sm font-bold text-blue-800/70 leading-relaxed mb-6">Peningkatan daya saing daerah melalui digitalisasi promosi cagar budaya dan penguatan akses pasar UMKM lokal.</p>
                                     <div className="flex items-end justify-between border-t border-blue-200/50 pt-4 mt-auto">
-                                        <div className="text-[10px] font-black uppercase tracking-widest text-blue-600/60">Visibilitas Pariwisata</div>
+                                        <div className="text-[10px] font-black uppercase tracking-widest text-blue-600/60">Penguatan Potensi Daerah</div>
                                         <div className="font-black text-2xl text-blue-700 font-mono">Global</div>
                                     </div>
                                 </div>
@@ -838,7 +838,7 @@ export default function Presentation() {
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center mb-6"><TrendingUp size={28} /></div>
                                     <h4 className="font-black text-2xl text-amber-950 mb-3 tracking-tight">Smart Economy</h4>
-                                    <p className="text-sm font-bold text-amber-800/70 leading-relaxed mb-6">Transaksi non-tunai (QRIS) terpusat & efisiensi elektronifikasi pajak daerah (P2DD).</p>
+                                    <p className="text-sm font-bold text-amber-800/70 leading-relaxed mb-6">Perluasan ekosistem transaksi non-tunai terpusat dan optimalisasi Elektronifikasi Transaksi Pemerintah Daerah (ETPD).</p>
                                     <div className="flex items-end justify-between border-t border-amber-200/50 pt-4 mt-auto">
                                         <div className="text-[10px] font-black uppercase tracking-widest text-amber-600/60">Elektronifikasi Transaksi</div>
                                         <div className="font-black text-2xl text-amber-700 font-mono">Q-RIS</div>
@@ -851,7 +851,7 @@ export default function Presentation() {
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 bg-rose-100 text-rose-700 rounded-2xl flex items-center justify-center mb-6"><Heart size={28} /></div>
                                     <h4 className="font-black text-2xl text-rose-950 mb-3 tracking-tight">Smart Living</h4>
-                                    <p className="text-sm font-bold text-rose-800/70 leading-relaxed mb-6">Transportasi ATCS, keamanan Siaga 112, & fasilitas kesehatan telemedicine yang andal.</p>
+                                    <p className="text-sm font-bold text-rose-800/70 leading-relaxed mb-6">Optimalisasi transportasi ATCS, keamanan terpadu Siaga 112, & fasilitasi layanan kesehatan kewilayahan.</p>
                                     <div className="flex items-end justify-between border-t border-rose-200/50 pt-4 mt-auto">
                                         <div className="text-[10px] font-black uppercase tracking-widest text-rose-600/60">Respons Kedaruratan</div>
                                         <div className="font-black text-2xl text-rose-700 font-mono">24/7</div>
@@ -864,7 +864,7 @@ export default function Presentation() {
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 bg-indigo-100 text-indigo-700 rounded-2xl flex items-center justify-center mb-6"><Users size={28} /></div>
                                     <h4 className="font-black text-2xl text-indigo-950 mb-3 tracking-tight">Smart Society</h4>
-                                    <p className="text-sm font-bold text-indigo-800/70 leading-relaxed mb-6">Literasi digital warga via I-Cirebon & partisipasi publik dalam E-Musrenbang.</p>
+                                    <p className="text-sm font-bold text-indigo-800/70 leading-relaxed mb-6">Peningkatan literasi digital masyarakat dan penguatan mekanisme partisipasi publik dalam aspirasi perencanaan daerah.</p>
                                     <div className="flex items-end justify-between border-t border-indigo-200/50 pt-4 mt-auto">
                                         <div className="text-[10px] font-black uppercase tracking-widest text-indigo-600/60">Partisipasi Publik</div>
                                         <div className="font-black text-2xl text-indigo-700 font-mono">Aktif</div>
@@ -877,7 +877,7 @@ export default function Presentation() {
                                 <div className="relative z-10">
                                     <div className="w-14 h-14 bg-teal-100 text-teal-700 rounded-2xl flex items-center justify-center mb-6"><Cloud size={28} /></div>
                                     <h4 className="font-black text-2xl text-teal-950 mb-3 tracking-tight">Smart Environment</h4>
-                                    <p className="text-sm font-bold text-teal-800/70 leading-relaxed mb-6">Manajemen persampahan DLH, sensor IoT lingkungan, & otomatisasi distribusi air PDAM.</p>
+                                    <p className="text-sm font-bold text-teal-800/70 leading-relaxed mb-6">Tata kelola persampahan ekologis berbasis data kewilayahan, mitigasi pencemaran, dan pengelolaan sumber daya air daerah.</p>
                                     <div className="flex items-end justify-between border-t border-teal-200/50 pt-4 mt-auto">
                                         <div className="text-[10px] font-black uppercase tracking-widest text-teal-600/60">Pemantauan Lingkungan</div>
                                         <div className="font-black text-2xl text-teal-700 font-mono">Real-Time</div>
@@ -892,7 +892,7 @@ export default function Presentation() {
         // Slide 12: Cybersecurity
         {
             content: (
-                <SlideWrapper title="Keamanan Siber & Privasi" subtitle="Benteng Pertahanan Digital & Privasi Warga" icon={ShieldCheck}>
+                <SlideWrapper title="Ketahanan Siber & Pelindungan Data Privasi (PDP)" subtitle="Infrastruktur Keamanan Ekosistem Digital Pemerintah Kota" icon={ShieldCheck}>
                     <div className="grid md:grid-cols-2 gap-10 h-full items-center max-w-7xl mx-auto pb-10 pt-4">
                         <div className="space-y-6">
                             <motion.div className="flex items-start gap-6 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
@@ -900,8 +900,8 @@ export default function Presentation() {
                                     <Lock size={32} />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-black text-slate-900 mb-2">Proteksi Data Pribadi (PDP)</h4>
-                                    <p className="text-sm text-slate-600 font-bold leading-relaxed mb-3">Enkripsi End-to-End untuk seluruh data kependudukan dan rekam medis warga Cirebon, menjamin kerahasiaan absolut.</p>
+                                    <h4 className="text-xl font-black text-slate-900 mb-2">Kepatuhan Pelindungan Data Pribadi</h4>
+                                    <p className="text-sm text-slate-600 font-bold leading-relaxed mb-3">Penerapan enkripsi mutakhir guna menjamin kerahasiaan dan integritas data kependudukan serta rekam medis masyarakat Kota Cirebon.</p>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-50 text-blue-700 font-black text-[10px] uppercase tracking-widest rounded-full border border-blue-200">
                                         <ShieldCheck size={12} /> Standar BSSN v3.0
                                     </div>
@@ -912,10 +912,10 @@ export default function Presentation() {
                                     <CheckCircle2 size={32} />
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-black text-slate-900 mb-2">Tanda Tangan Elektronik (TTE)</h4>
-                                    <p className="text-sm text-slate-600 font-bold leading-relaxed mb-3">Otentikasi resmi BSrE BSSN di seluruh naskah dinas untuk mencegah pemalsuan dokumen surat menyurat pemerintahan.</p>
+                                    <h4 className="text-xl font-black text-slate-900 mb-2">Otentikasi Tanda Tangan Elektronik (TTE) Tersertifikasi</h4>
+                                    <p className="text-sm text-slate-600 font-bold leading-relaxed mb-3">Penerapan TTE tersertifikasi Balai Sertifikasi Elektronik (BSrE) BSSN pada tata naskah dinas guna menjamin keabsahan dan nirsangkal dokumen (non-repudiation).</p>
                                     <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-50 text-amber-700 font-black text-[10px] uppercase tracking-widest rounded-full border border-amber-200">
-                                        <ShieldCheck size={12} /> BSRE Certified
+                                        <ShieldCheck size={12} /> Tersertifikasi BSRE
                                     </div>
                                 </div>
                             </motion.div>
@@ -948,9 +948,9 @@ export default function Presentation() {
                                     <style>{`@keyframes scan { 0% { top: -10%; } 100% { top: 110%; } }`}</style>
                                 </div>
 
-                                <h4 className="text-white text-3xl font-black tracking-tight mb-4 drop-shadow-md">INTRANET TERISOLASI</h4>
+                                <h4 className="text-white text-3xl font-black tracking-tight mb-4 drop-shadow-md">JARINGAN INTRANET TERISOLASI</h4>
                                 <p className="text-slate-300 font-bold leading-relaxed italic max-w-sm drop-shadow-md">
-                                    Seluruh komunikasi data antar dinas berjalan di atas <span className="text-emerald-400">VPN tertutup</span>, memutus celah Ransomware dari internet publik.
+                                    Interkoneksi pertukaran data antar Perangkat Daerah diselenggarakan melalui <span className="text-emerald-400">Jaringan Privat Virtual (VPN)</span> tertutup, sebagai mitigasi proaktif terhadap ancaman Ransomware dari jaringan publik.
                                 </p>
                                 <div className="mt-auto pt-8">
                                     <div className="px-6 py-2.5 bg-green-500/10 border border-green-500/30 rounded-full text-green-400 font-black text-xs uppercase tracking-[0.2em] shadow-[0_0_20px_rgba(34,197,94,0.2)] backdrop-blur-md">
@@ -966,15 +966,15 @@ export default function Presentation() {
         // Slide 13: SIPD
         {
             content: (
-                <SlideWrapper title="Ekosistem SIPD Terpadu" subtitle="Sistem Informasi Pemerintahan Daerah (Arsitektur Keuangan APBD)" icon={Landmark}>
+                <SlideWrapper title="Integrasi Sistem Informasi Pemerintahan Daerah (SIPD)" subtitle="Arsitektur Pengelolaan Keuangan Daerah Basis Akrual" icon={Landmark}>
                     <div className="flex flex-col gap-10 pt-4 max-w-7xl mx-auto pb-10">
                         <div className="bg-white p-8 md:p-12 rounded-[3.5rem] border border-slate-200 shadow-xl relative overflow-hidden">
                             <div className="absolute right-[-10%] top-[-10%] opacity-10 rotate-12 -z-0">
                                 <Landmark size={400} />
                             </div>
                             <div className="relative z-10">
-                                <h3 className="text-3xl font-black text-slate-900 mb-2">Arsitektur Siklus Tertutup <span className="text-emerald-600">(Closed-Loop)</span></h3>
-                                <p className="text-slate-500 font-bold mb-10 max-w-2xl">Visualisasi rantai nilai perencanaan pembangunan daerah terintegrasi yang dikawal ketat oleh SIPD untuk mencegah korupsi dan inefisiensi anggaran.</p>
+                                <h3 className="text-3xl font-black text-slate-900 mb-2">Siklus Tata Kelola Terintegrasi <span className="text-emerald-600">(Closed-Loop Architecture)</span></h3>
+                                <p className="text-slate-500 font-bold mb-10 max-w-2xl">Pemetaan rantai nilai perencanaan, penganggaran, pelaksanaan, dan evaluasi pembangunan daerah secara terpadu guna mitigasi risiko penyimpangan dan inefisiensi alokasi APBD.</p>
                                 
                                 {/* Linear Flow Diagram */}
                                 <div className="flex flex-col md:flex-row justify-between items-center md:items-stretch gap-6 md:gap-4 w-full relative">
@@ -982,10 +982,10 @@ export default function Presentation() {
                                     <div className="hidden md:block absolute top-[45%] left-10 right-10 h-2 bg-slate-100 -z-10 rounded-full" />
                                     
                                     {[
-                                        { t: "MUSRENBANG", l: "E-Planning", p: "Partisipasi", c: "border-blue-200 bg-blue-50 text-blue-700", icon: Users },
-                                        { t: "STANDARISASI", l: "E-Budgeting", p: "Penganggaran", c: "border-amber-200 bg-amber-50 text-amber-700", icon: FileText },
-                                        { t: "PENATAUSAHAAN", l: "E-Implementasi", p: "Pelaksanaan", c: "border-emerald-200 bg-emerald-50 text-emerald-700", icon: CheckCircle2 },
-                                        { t: "AUDIT RISET", l: "E-Monev", p: "Evaluasi", c: "border-rose-200 bg-rose-50 text-rose-700", icon: Target },
+                                        { t: "PERENCANAAN", l: "E-Planning", p: "Partisipasi", c: "border-blue-200 bg-blue-50 text-blue-700", icon: Users },
+                                        { t: "PENGANGGARAN", l: "E-Budgeting", p: "Alokasi", c: "border-amber-200 bg-amber-50 text-amber-700", icon: FileText },
+                                        { t: "PELAKSANAAN", l: "E-Implementasi", p: "Penatausahaan", c: "border-emerald-200 bg-emerald-50 text-emerald-700", icon: CheckCircle2 },
+                                        { t: "EVALUASI", l: "E-Monev", p: "Pengawasan", c: "border-rose-200 bg-rose-50 text-rose-700", icon: Target },
                                     ].map((step, idx) => (
                                         <motion.div key={step.t} className="flex-1 flex flex-col items-center w-full" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 * idx }}>
                                             <div className={`w-20 h-20 rounded-t-[2rem] rounded-b-[0.5rem] border-[6px] ${step.c} flex items-center justify-center bg-white shadow-lg mb-4 relative hover:-translate-y-2 transition-transform duration-300 z-10`}>
@@ -1006,7 +1006,7 @@ export default function Presentation() {
                                         <Lock size={32} />
                                     </div>
                                     <p className="text-lg md:text-xl font-medium leading-relaxed italic pr-4">
-                                        &quot;SIPD mengunci usulan Musrenbang sampai menjadi RKPD. Meniadakan kemungkinan <strong>program siluman</strong> menyelinap di tengah proses alokasi anggaran.&quot;
+                                        &quot;Sistem SIPD mengamankan konsistensi usulan perencanaan hingga penetapan RKPD, guna meminimalisasi intervensi penganggaran yang tidak sesuai dengan peruntukan dan prioritas pembangunan (<strong>program siluman</strong>).&quot;
                                     </p>
                                 </div>
                             </div>
@@ -1016,18 +1016,18 @@ export default function Presentation() {
                             <motion.div className="bg-emerald-600 p-8 md:p-10 rounded-[3rem] text-white flex flex-col justify-center items-start relative overflow-hidden shadow-[0_20px_40px_-15px_rgba(5,150,105,0.4)]" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}>
                                 <div className="absolute right-[-10%] top-[-50%] w-64 h-64 bg-emerald-500 blur-3xl rounded-full opacity-50 mix-blend-screen" />
                                 <h4 className="text-xl font-black text-emerald-100 mb-4 tracking-tight">Zero Local Hosting Cost</h4>
-                                <p className="text-3xl md:text-4xl font-black leading-tight tracking-tighter mb-6 relative z-10">
-                                    Fasilitasi Pusat Data Nasional menghemat APBD senilai miliaran Rupiah setiap tahunnya.
+                                <p className="text-2xl md:text-3xl font-black leading-tight tracking-tighter mb-6 relative z-10">
+                                    Pemanfaatan infrastruktur Pusat Data Nasional (PDN) memproyeksikan efisiensi alokasi APBD senilai miliaran rupiah/tahun dari efisiensi belanja server fisik.
                                 </p>
-                                <div className="px-5 py-2 bg-emerald-950/40 border border-emerald-400/30 rounded-full font-black text-xs uppercase tracking-widest backdrop-blur-md">Efisiensi Mutlak</div>
+                                <div className="px-5 py-2 bg-emerald-950/40 border border-emerald-400/30 rounded-full font-black text-xs uppercase tracking-widest backdrop-blur-md">Efisiensi APBD</div>
                             </motion.div>
                             <motion.div className="bg-slate-50 p-8 md:p-10 rounded-[3rem] border border-slate-200 shadow-sm flex flex-col justify-center" initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}>
                                 <div className="flex items-center gap-4 mb-6">
                                     <div className="w-12 h-12 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center"><Activity size={24} /></div>
-                                    <h4 className="text-xl font-black text-slate-800">Transparansi Real-Time</h4>
+                                    <h4 className="text-xl font-black text-slate-800">Transparansi Anggaran Aktual</h4>
                                 </div>
                                 <p className="text-slate-600 font-bold leading-relaxed mb-6">
-                                    Pimpinan dapat memantau serapan anggaran (realisasi) dari masing-masing OPD setiap saat secara aktual (real-time) melalui Executive Dashboard.
+                                    Kepala Daerah dan pemangku kepentingan dapat melakukan pengawasan terhadap realisasi daya serap anggaran tiap-tiap Perangkat Daerah secara aktual melalui panel kendali tingkat eksekutif.
                                 </p>
                                 <div className="flex gap-4">
                                     <div className="flex-1 h-3 bg-slate-200 rounded-full overflow-hidden">
@@ -1044,19 +1044,19 @@ export default function Presentation() {
         // Slide 14: Executive Dashboard
         {
             content: (
-                <SlideWrapper title="Executive Dashboard" subtitle="Cockpit View Pimpinan: Kendali Data Real-Time" icon={LayoutDashboard}>
+                <SlideWrapper title="Panel Kendali Eksekutif (Executive Dashboard)" subtitle="Pusat Kendali Pimpinan: Pengawasan Aktual Berbasis Data" icon={LayoutDashboard}>
                     <div className="grid lg:grid-cols-12 gap-10 h-full pt-4 max-w-7xl mx-auto pb-10">
                         <div className="lg:col-span-5 h-full flex flex-col gap-6">
                             <div className="bg-slate-50 p-8 rounded-[3rem] border border-slate-200 shadow-sm flex-1">
-                                <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Keputusan Berbasis Fakta</h3>
-                                <p className="text-slate-600 font-bold leading-relaxed mb-8">Executive Dashboard mentransformasi lautan raw data dari Data Lake menjadi analitik cerdas yang dapat diakses Kepala Daerah secara instan dari genggaman (mobile-ready).</p>
+                                <h3 className="text-2xl font-black text-slate-900 mb-4 tracking-tight">Pengambilan Keputusan Fakta (Data-Driven)</h3>
+                                <p className="text-slate-600 font-bold leading-relaxed mb-8">Layanan ini mensintesis data mentah dari Pusat Data Terpadu menjadi luaran analitis strategis yang dapat diakses Pimpinan Daerah secara seketika guna mendukung pengambilan kebijakan secara presisi.</p>
                                 
                                 <div className="space-y-4">
                                     {[
-                                        { t: "Radar PAD", d: "Realisasi harian per sektor Pajak & Retribusi.", i: Landmark, delay: 0.1 },
-                                        { t: "EWS Banjir", d: "Status tinggi muka air pintu air secara aktual.", i: AlertTriangle, delay: 0.2 },
-                                        { t: "Stunting Map", d: "Peta titik balita risiko tinggi berdasarkan geo-tagging.", i: Stethoscope, delay: 0.3 },
-                                        { t: "Publik Opini", d: "Sentimen warga dari analitik aduan & sosial media.", i: MessageSquare, delay: 0.4 },
+                                        { t: "Pemantauan PAD", d: "Akumulasi realisasi harian objek Pajak & Retribusi Daerah.", i: Landmark, delay: 0.1 },
+                                        { t: "Peringatan Dini Kebencanaan", d: "Pemantauan status elevasi bendung dan pintu air.", i: AlertTriangle, delay: 0.2 },
+                                        { t: "Peta Risiko Stunting", d: "Analisis geospasial sebaran balita terindikasi risiko tinggi.", i: Stethoscope, delay: 0.3 },
+                                        { t: "Analisis Opini Publik", d: "Kuantifikasi sentimen masyarakat dari ragam kanal persandian aduan.", i: MessageSquare, delay: 0.4 },
                                     ].map((item) => (
                                         <motion.div key={item.t} className="flex items-center gap-4 bg-white p-4 rounded-2xl border border-slate-100 shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)]" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: item.delay }}>
                                             <div className="p-2.5 bg-slate-100 rounded-xl text-slate-700 shrink-0"><item.i size={20} /></div>
@@ -1073,12 +1073,12 @@ export default function Presentation() {
                                 <div className="absolute right-[-10%] top-[-20%] opacity-20"><Clock size={160} /></div>
                                 <div className="relative z-10">
                                     <div className="text-emerald-100 font-black text-xs uppercase tracking-widest mb-2 flex items-center gap-2">
-                                        <div className="w-2 h-2 rounded-full bg-white animate-pulse" /> Live SLA Metrics
+                                        <div className="w-2 h-2 rounded-full bg-white animate-pulse" /> Indikator Mutu Layanan (SLA)
                                     </div>
-                                    <p className="font-medium text-emerald-50 text-sm italic mb-4 max-w-[80%]">Rata-rata kecepatan respons seluruh Instansi terhadap laporan kedaruratan warga.</p>
+                                    <p className="font-medium text-emerald-50 text-sm italic mb-4 max-w-[80%]">Rerata waktu tanggap (response time) Perangkat Daerah dalam penanganan kedaruratan masyarakat.</p>
                                     <div className="flex items-end gap-3">
                                         <div className="text-5xl font-black tracking-tighter">98.2<span className="text-3xl opacity-70">%</span></div>
-                                        <div className="px-3 py-1 bg-white/20 rounded-full text-[10px] font-black uppercase mb-1">Cepat & Tepat</div>
+                                        <div className="px-3 py-1 bg-white/20 rounded-full text-[10px] font-black uppercase mb-1">Optimal</div>
                                     </div>
                                 </div>
                             </motion.div>
@@ -1096,7 +1096,7 @@ export default function Presentation() {
                                 <div className="flex justify-between items-center px-4 py-3 border-b border-slate-800 shrink-0">
                                     <div className="flex items-center gap-4">
                                         <div className="w-3 h-3 rounded-full bg-rose-500 animate-pulse" />
-                                        <div className="text-slate-400 font-mono text-[10px] font-black tracking-[0.3em] uppercase">Executive Command</div>
+                                        <div className="text-slate-400 font-mono text-[10px] font-black tracking-[0.3em] uppercase">Panel Eksekutif</div>
                                     </div>
                                     <div className="flex gap-2">
                                         <div className="w-16 h-1.5 bg-slate-800 rounded-full overflow-hidden"><div className="w-[80%] h-full bg-blue-500" /></div>
@@ -1110,7 +1110,7 @@ export default function Presentation() {
                                     <div className="col-span-12 row-span-2 bg-slate-900/50 border border-slate-800/80 rounded-3xl p-6 flex flex-col justify-center relative overflow-hidden group">
                                         <div className="absolute right-0 top-0 w-32 h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')] pointer-events-none" />
                                         <div className="text-emerald-500/80 font-mono text-[10px] font-black uppercase tracking-widest mb-1 flex items-center justify-between">
-                                            <span>Target PAD 2029</span>
+                                            <span>Proyeksi PAD 2029</span>
                                             <TrendingUp size={14} className="text-emerald-400" />
                                         </div>
                                         <div className="text-white text-5xl font-black tabular-nums tracking-tighter decoration-emerald-500/50 underline decoration-4 underline-offset-8 mt-2">Rp 2.45<span className="text-3xl text-slate-500 font-bold ml-1">Triliun</span></div>
@@ -1125,13 +1125,13 @@ export default function Presentation() {
                                     {/* EWS Alerts */}
                                     <div className="col-span-5 row-span-4 bg-rose-950/20 border border-rose-900/30 rounded-3xl p-6 flex flex-col">
                                         <div className="text-rose-500/80 font-mono text-[10px] font-black uppercase tracking-widest mb-4 flex items-center gap-2">
-                                            <AlertTriangle size={14} /> EWS Alerts <span className="px-1.5 py-0.5 bg-rose-500/20 rounded text-rose-400">3 Aktif</span>
+                                            <AlertTriangle size={14} /> Notifikasi Kebencanaan <span className="px-1.5 py-0.5 bg-rose-500/20 rounded text-rose-400">3 Log</span>
                                         </div>
                                         <div className="space-y-3 flex-1">
                                             {[
-                                                { m: "TMA Sungai Kriyan Naik", l: "Siaga 2", t: "10m ago" },
-                                                { m: "Kepadatan Simpang Plered", l: "CCTV-04", t: "12m ago" },
-                                                { m: "Aduan Jalan Berlubang", l: "Harjamukti", t: "1h ago" },
+                                                { m: "Elevasi SP Kriyan Meningkat", l: "Siaga 2", t: "10m ago" },
+                                                { m: "Antrean Simpang Plered", l: "CCTV-04", t: "12m ago" },
+                                                { m: "Laporan Infrastruktur Jalan", l: "Harjamukti", t: "1h ago" },
                                             ].map((a, i) => (
                                                 <div key={i} className="bg-slate-900/80 p-3 rounded-2xl border border-slate-800">
                                                     <div className="text-rose-400 font-bold text-xs mb-1">{a.m}</div>
@@ -1171,26 +1171,26 @@ export default function Presentation() {
         // Slide 15: Super App
         {
             content: (
-                <SlideWrapper title="Cirebon Super App" subtitle="Single Identity & Integrated Citizen Gateway" icon={Smartphone}>
+                <SlideWrapper title="Aplikasi Terpadu Cirebon (Super App)" subtitle="Identitas Tunggal & Layanan Publik Terintegrasi" icon={Smartphone}>
                     <div className="grid md:grid-cols-2 gap-12 items-center h-full pt-4 max-w-7xl mx-auto pb-10">
                         <div className="space-y-8">
                             <div className="space-y-4">
-                                <h3 className="text-4xl md:text-5xl font-black text-slate-950 leading-tight tracking-tight underline decoration-emerald-500 decoration-[14px] underline-offset-10 mb-6 drop-shadow-sm">The Single Digital Portal for All.</h3>
-                                <p className="text-xl md:text-2xl text-slate-500 font-bold leading-relaxed mb-10">Satu identitas digital untuk mengurai benang kusut birokrasi dan melayani seluruh kebutuhan warga Cirebon.</p>
+                                <h3 className="text-4xl md:text-5xl font-black text-slate-950 leading-tight tracking-tight underline decoration-emerald-500 decoration-[14px] underline-offset-10 mb-6 drop-shadow-sm">Satu Pintu Layanan Digital Terpadu.</h3>
+                                <p className="text-xl md:text-2xl text-slate-500 font-bold leading-relaxed mb-10">Implementasi identitas kependudukan digital yang bersinergi untuk menyederhanakan akses layanan publik dan birokrasi bagi seluruh masyarakat Kota Cirebon.</p>
                             </div>
                             <div className="grid grid-cols-1 gap-6">
                                 <motion.div className="flex bg-white p-6 rounded-3xl border border-slate-200 shadow-sm gap-6 group hover:border-blue-300 transition-colors" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}>
                                     <div className="w-16 h-16 rounded-2xl bg-blue-50 text-blue-600 flex justify-center items-center shrink-0 group-hover:scale-110 transition-transform"><Lock size={32} /></div>
                                     <div>
-                                        <h4 className="text-xl font-black text-slate-800 mb-2">Identitas Tunggal (IKD)</h4>
-                                        <p className="text-slate-600 font-bold leading-relaxed text-sm">Verifikasi biometrik IKD Kemendagri. Daftar satu kali (<span className="text-blue-600 italic">Single Sign-On</span>) untuk akses ratusan layanan publik tanpa fotokopi KTP berulang.</p>
+                                        <h4 className="text-xl font-black text-slate-800 mb-2">Integrasi Identitas Digital (IKD)</h4>
+                                        <p className="text-slate-600 font-bold leading-relaxed text-sm">Pemanfaatan verifikasi biometrik IKD dengan mekanisme log masuk tunggal (<span className="text-blue-600 italic">Single Sign-On</span>) yang mengeliminasi kewajiban lampiran dokumen fotokopi lintas instansi.</p>
                                     </div>
                                 </motion.div>
                                 <motion.div className="flex bg-white p-6 rounded-3xl border border-slate-200 shadow-sm gap-6 group hover:border-emerald-300 transition-colors" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.2 }}>
                                     <div className="w-16 h-16 rounded-2xl bg-emerald-50 text-emerald-600 flex justify-center items-center shrink-0 group-hover:scale-110 transition-transform"><TrendingUp size={32} /></div>
                                     <div>
-                                        <h4 className="text-xl font-black text-slate-800 mb-2">Seamless Payment Gateway</h4>
-                                        <p className="text-slate-600 font-bold leading-relaxed text-sm">Terintegrasi BJB Aggregator QRIS untuk melunasi PBB, Retribusi Sampah, & Tagihan PDAM hanya dalam 3 kali tap tanpa calo.</p>
+                                        <h4 className="text-xl font-black text-slate-800 mb-2">Gerbang Pembayaran Elektronik Daerah</h4>
+                                        <p className="text-slate-600 font-bold leading-relaxed text-sm">Sinergi perbankan Rekening Kas Umum Daerah (RKUD BJB) guna fasilitasi pelunasan instan kewajiban Pajak Bumi & Bangunan, Retribusi, serta PPOB PDAM secara efisien dan nirtunai.</p>
                                     </div>
                                 </motion.div>
                             </div>
@@ -1218,8 +1218,8 @@ export default function Presentation() {
                                         <Image src="/Logo_Cirebon.png" alt="Logo Cirebon" width={32} height={32} className="brightness-0 invert opacity-90" />
                                         <div className="w-10 h-10 rounded-full bg-white/20 border-2 border-white/50 flex items-center justify-center p-0.5"><div className="w-full h-full bg-slate-200 rounded-full overflow-hidden flex items-center justify-center bg-[url('https://i.pravatar.cc/100')] bg-cover" /></div>
                                     </div>
-                                    <h4 className="text-white font-black text-2xl tracking-tight relative z-10">Hi, Warga!</h4>
-                                    <p className="text-emerald-100/90 text-[11px] font-bold uppercase tracking-widest relative z-10 flex items-center gap-1"><CheckCircle2 size={12} className="text-emerald-300" /> IKD Verified</p>
+                                    <h4 className="text-white font-black text-2xl tracking-tight relative z-10">Salam, Warga!</h4>
+                                    <p className="text-emerald-100/90 text-[11px] font-bold uppercase tracking-widest relative z-10 flex items-center gap-1"><CheckCircle2 size={12} className="text-emerald-300" /> Terverifikasi IKD</p>
                                 </div>
 
                                 {/* App Content */}
@@ -1227,7 +1227,7 @@ export default function Presentation() {
                                     {/* E-Wallet Mock */}
                                     <div className="bg-gradient-to-r from-slate-900 to-slate-800 p-5 rounded-3xl shadow-lg border border-slate-700/50 flex flex-col justify-between h-32 relative overflow-hidden group-hover:-translate-y-1 transition-transform">
                                         <div className="absolute right-0 top-0 w-24 h-full bg-white/5 skew-x-12 translate-x-12" />
-                                        <div className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Saldo Q-RIS</div>
+                                        <div className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Saldo Digital Rakyat</div>
                                         <div className="text-white text-3xl font-black tabular-nums tracking-tighter mix-blend-screen">Rp 2.450.000</div>
                                         <div className="flex justify-between items-end mt-2">
                                             <div className="text-slate-500 font-mono text-[9px]">**** **** **** 3920</div>
@@ -1238,8 +1238,8 @@ export default function Presentation() {
                                     {/* Quick Amenities */}
                                     <div>
                                         <div className="flex justify-between items-end mb-3 px-1">
-                                            <div className="text-slate-800 font-black text-sm">Layanan Esensial</div>
-                                            <div className="text-blue-600 font-bold text-[10px] uppercase">Lihat Semua</div>
+                                            <div className="text-slate-800 font-black text-sm">Layanan Digital Esensial</div>
+                                            <div className="text-blue-600 font-bold text-[10px] uppercase">Eksplorasi</div>
                                         </div>
                                         <div className="grid grid-cols-4 gap-3">
                                             {[
@@ -1266,10 +1266,10 @@ export default function Presentation() {
                                     <div className="bg-white p-4 rounded-3xl shadow-sm border border-slate-200 relative overflow-hidden">
                                         <div className="absolute left-0 top-0 w-1.5 h-full bg-rose-500" />
                                         <div className="flex justify-between items-start mb-2">
-                                            <h5 className="font-black text-slate-800 text-sm">Peringatan Dini (EWS)</h5>
+                                            <h5 className="font-black text-slate-800 text-sm">Peringatan Dini Bencana</h5>
                                             <span className="text-[9px] font-black uppercase text-rose-500 bg-rose-50 px-2 py-0.5 rounded-full">Siaga</span>
                                         </div>
-                                        <p className="text-xs text-slate-500 font-bold leading-tight line-clamp-2 mb-3">Peningkatan genangan air di Jalan Siliwangi terdeteksi sensor IoT. Harap hindari rute ini.</p>
+                                        <p className="text-xs text-slate-500 font-bold leading-tight line-clamp-2 mb-3">Pemantauan peningkatan suhu dan debit aliran. Harap waspada dan menunda aktivitas bantaran sungai.</p>
                                         <div className="h-2 bg-slate-100 rounded-full overflow-hidden"><div className="w-[80%] h-full bg-rose-500" /></div>
                                     </div>
                                     
@@ -1318,24 +1318,24 @@ export default function Presentation() {
                             transition={{ delay: 0.5, duration: 1.5 }}
                         />
                         <h2 className="text-4xl md:text-7xl lg:text-8xl font-black mb-16 tracking-tighter leading-[0.9] text-white selection:bg-emerald-500 selection:text-white">
-                            Cirebon Strategic Pledge:<br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-400 drop-shadow-[0_0_30px_rgba(52,211,153,0.3)]">Legacy Modernisasi.</span>
+                            Komitmen Strategis Cirebon:<br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-blue-400 drop-shadow-[0_0_30px_rgba(52,211,153,0.3)]">Landasan Demokrasi Digital.</span>
                         </h2>
 
                         <div className="bg-white/5 backdrop-blur-3xl border border-white/10 p-12 md:p-20 rounded-[4rem] shadow-2xl relative mb-20 max-w-5xl group overflow-hidden">
                              <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
                             <div className="absolute top-[-20px] md:top-[-40px] left-6 md:left-12 text-[8rem] md:text-[14rem] text-emerald-500/10 font-black pointer-events-none select-none italic leading-none">&ldquo;</div>
                             <p className="text-emerald-50/90 text-2xl md:text-4xl lg:text-5xl font-black leading-[1.4] italic relative z-10 tracking-tight">
-                                Memanusiakan pelayanan, <span className="text-white underline decoration-emerald-500 decoration-8 underline-offset-8">memartabatkan waktu warga</span>, dan mencintai masyarakat Kota Cirebon.
+                                Optimalisasi tata kelola pelayanan publik secara nirkertas yang menjunjung tinggi martabat kemanusiaan demi kesejahteraan segenap warga <span className="text-white underline decoration-emerald-500 decoration-8 underline-offset-8">Kota Cirebon</span>.
                             </p>
                             <div className="absolute bottom-[-20px] md:bottom-[-40px] right-6 md:right-12 text-[8rem] md:text-[14rem] text-blue-500/10 font-black pointer-events-none select-none italic leading-none">&rdquo;</div>
                         </div>
 
                         <div className="flex flex-col items-center gap-6">
                             <div className="px-12 py-5 bg-gradient-to-r from-emerald-600 to-teal-700 text-white rounded-full font-black text-sm md:text-base uppercase tracking-[0.4em] shadow-[0_10px_30px_rgba(5,150,105,0.4)] hover:scale-105 transition-transform duration-500 cursor-default border border-emerald-400/30">
-                                Smart City Cirebon 2029
+                                CIREBON KOTA CERDAS 2029
                             </div>
-                            <div className="text-slate-400 font-black text-[10px] md:text-sm tracking-widest mt-2 bg-slate-900/50 px-6 py-2 rounded-full border border-slate-800">TRANSFORMASI DIGITAL • INKLUSIF • BERKELANJUTAN</div>
+                            <div className="text-slate-400 font-black text-[10px] md:text-sm tracking-widest mt-2 bg-slate-900/50 px-6 py-2 rounded-full border border-slate-800">TRANSFORMASI BIROKRASI • INKLUSIF DIGITAL • TATA KELOLA MASA DEPAN</div>
                         </div>
                     </motion.div>
                 </div>
