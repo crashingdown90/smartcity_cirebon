@@ -197,39 +197,72 @@ export default function Presentation() {
         {
             content: (
                 <SlideWrapper title="Mandat Nasional & Arahan Tertinggi" subtitle="Penegakan SPBE & Reformasi Birokrasi" icon={ShieldCheck}>
-                    <div className="flex flex-col md:flex-row gap-12 mt-8 items-center justify-center max-w-7xl mx-auto h-full pb-10">
-                        <div className="flex-1 w-full max-w-lg">
-                            <Card title="Moratorium Aplikasi" icon={ShieldAlert} delay={0.1} variant="warning">
-                                <p className="mb-6 text-lg font-bold text-slate-800 tracking-tight leading-tight">Instruksi tegas Presiden RI: Tebas Silo Birokrasi Digital.</p>
-                                <ul className="space-y-4 text-[14px] font-semibold text-slate-500 mb-8">
-                                    <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={18} /> Stop pembuatan aplikasi parsial/sektoral baru secara sporadis.</li>
-                                    <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={18} /> Konsolidasi 27.000 aplikasi nasional yang redundan dan boros APBD.</li>
-                                </ul>
-                                <div className="status-badge-premium bg-rose-50 border border-rose-200/50">
-                                    <div className="text-rose-700 font-black text-[10px] uppercase tracking-[0.3em] mb-1 opacity-70">Kedaulatan Sistem:</div>
-                                    <div className="text-rose-900 font-black text-3xl tracking-tighter italic">URGENT MORATORIUM</div>
-                                    <ShieldAlert className="absolute right-[-15px] bottom-[-15px] text-rose-500/10 rotate-12" size={100} />
+                    <div className="flex flex-col gap-6 max-w-7xl mx-auto pb-10">
+                        {/* Top Header Banner for Perpres */}
+                        <motion.div 
+                            className="bg-slate-950 rounded-[2.5rem] p-8 md:p-10 border-l-[12px] border-amber-500 shadow-2xl relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8 group"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.1 }}
+                        >
+                            <div className="absolute right-0 top-0 opacity-[0.05] group-hover:scale-110 transition-transform duration-1000 pointer-events-none">
+                                <Landmark size={300} />
+                            </div>
+                            <div className="relative z-10 flex-1">
+                                <div className="flex flex-wrap items-center gap-4 mb-4">
+                                    <Tag color="amber">Regulasi Pengikat</Tag>
+                                    <div className="text-slate-400 font-bold text-sm tracking-widest uppercase">Perpres No. 82 Tahun 2023</div>
+                                </div>
+                                <h3 className="text-3xl md:text-5xl font-black text-white tracking-tight leading-tight mb-4">
+                                    Percepatan Transformasi Digital <span className="text-amber-500">Keterpaduan Layanan Nasional.</span>
+                                </h3>
+                                <p className="text-slate-300 text-base md:text-lg font-medium leading-relaxed italic border-l-4 border-slate-700 pl-4">
+                                    &quot;Pemerintah Daerah dilarang keras membangun aplikasi baru yang parsial dan tumpang tindih.&quot;
+                                </p>
+                            </div>
+                            <div className="relative z-10 w-full md:w-auto shrink-0 flex justify-center">
+                                <div className="w-24 h-24 md:w-40 md:h-40 rounded-[2rem] bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-500 transform rotate-3 group-hover:rotate-0 transition-transform duration-500">
+                                    <Landmark size={64} className="scale-75 md:scale-100" />
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        <div className="grid md:grid-cols-2 gap-6">
+                            <Card title="Urgensi: Moratorium Aplikasi" icon={ShieldAlert} delay={0.2} variant="warning">
+                                <div className="flex flex-col h-full space-y-6">
+                                    <p className="text-lg font-bold text-slate-800 leading-snug">
+                                        Instruksi Presiden RI untuk menebas <i>Silo Mentality</i> birokrasi digital daerah.
+                                    </p>
+                                    <ul className="space-y-4 text-[14px] font-semibold text-slate-600 flex-1">
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Stop pembuatan aplikasi pemda baru yang spesifik pada satu dinas.</span></li>
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-rose-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Konsolidasi 27.000 aplikasi nasional yang redundan dan membagi fokus layanan.</span></li>
+                                    </ul>
+                                    <div className="bg-rose-50/80 rounded-2xl p-4 border border-rose-100 flex items-center gap-4 mt-auto">
+                                        <ShieldAlert className="text-rose-500 shrink-0" size={28} />
+                                        <div>
+                                            <div className="text-rose-900 font-black text-[10px] tracking-widest uppercase mb-1">Status Nasional</div>
+                                            <div className="text-rose-700 font-bold text-sm leading-none">Fase Reduksi Aplikasi Aktif</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </Card>
-                        </div>
-                        
-                        <div className="glass-separator hidden md:flex self-stretch">
-                            <div className="glass-separator-line" />
-                            <div className="glass-separator-badge">PERPRES NO. 82 TAHUN 2023</div>
-                            <div className="glass-separator-line" />
-                        </div>
 
-                        <div className="flex-1 w-full max-w-lg">
-                            <Card title="INA Digital (GovTech)" icon={Globe} delay={0.2} variant="blue">
-                                <p className="mb-6 text-lg font-bold text-slate-800 tracking-tight leading-tight">Satu Portal Nasional: Integrasi Wajib Layanan Publik Daerah.</p>
-                                <ul className="space-y-4 text-[14px] font-semibold text-slate-500 mb-8">
-                                    <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={18} /> Fokus Inti: Kesehatan, Pendidikan, Adminduk, & Bantuan Sosial.</li>
-                                    <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={18} /> Ekosistem SSO (Single Sign-On): Warga Cirebon Login 1 Kali.</li>
-                                </ul>
-                                <div className="status-badge-premium bg-blue-50 border border-blue-200/50">
-                                    <div className="text-blue-700 font-black text-[10px] uppercase tracking-[0.3em] mb-1 opacity-70">Tenggat Integrasi:</div>
-                                    <div className="text-blue-900 font-black text-3xl tracking-tighter italic">AGUSTUS 2025</div>
-                                    <Globe className="absolute right-[-15px] bottom-[-15px] text-blue-500/10 rotate-12" size={100} />
+                            <Card title="Solusi: INA Digital (GovTech)" icon={Globe} delay={0.3} variant="blue">
+                                <div className="flex flex-col h-full space-y-6">
+                                    <p className="text-lg font-bold text-slate-800 leading-snug">
+                                        Pembentukan Satu Portal Nasional terintegrasi. Wajib terkoneksi dengan portal daerah.
+                                    </p>
+                                    <ul className="space-y-4 text-[14px] font-semibold text-slate-600 flex-1">
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Sektor Prioritas Integrasi: Kesehatan, Pendidikan, Adminduk & Bantuan Sosial.</span></li>
+                                        <li className="flex gap-4 items-start"><CheckCircle2 className="text-blue-500 shrink-0 mt-0.5" size={20} /> <span className="leading-relaxed">Penerapan Ekosistem Identitas Digital Tunggal (IKD) untuk Single Sign-On (SSO).</span></li>
+                                    </ul>
+                                    <div className="bg-blue-50/80 rounded-2xl p-4 border border-blue-100 flex items-center gap-4 mt-auto">
+                                        <Globe className="text-blue-500 shrink-0" size={28} />
+                                        <div>
+                                            <div className="text-blue-900 font-black text-[10px] tracking-widest uppercase mb-1">Target Sinkronisasi Daerah</div>
+                                            <div className="text-blue-700 font-bold text-sm leading-none">Batas Akhir Berjalan: Agustus 2025</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </Card>
                         </div>
