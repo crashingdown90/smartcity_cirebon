@@ -6,18 +6,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
     ChevronLeft, ChevronRight, ShieldCheck, Target, TrendingUp, Cpu,
     LayoutDashboard, Database, Smartphone, MessageSquare, Building2,
-    Share2, LineChart, CloudCog, FileText, Globe, Landmark, Network, Lightbulb,
+    Share2, CloudCog, FileText, Globe, Landmark, Network, Lightbulb,
     AlertTriangle, Camera, CheckCircle2, ShieldAlert, Users, Map, Clock, HeartHandshake,
-    Stethoscope, GraduationCap, Briefcase, Lock, Heart, Cloud
+    Stethoscope, Lock, Heart, Cloud
 } from "lucide-react";
 
 // --- Reusable Components ---
 
-const SlideWrapper = ({ children, title, subtitle, icon: Icon }: { children: React.ReactNode, title: string, subtitle: string, icon?: any }) => (
+const SlideWrapper = ({ children, title, subtitle, icon: Icon }: { children: React.ReactNode, title: string, subtitle: string, icon?: React.ElementType }) => (
     <div className="flex flex-col h-full p-8 md:p-14 relative overflow-hidden bg-transparent text-slate-900">
         {/* Decorative background elements for each slide */}
-        <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] glow-orb" style={{ '--orb-color': '#0A5C36' } as any} />
-        <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[40%] glow-orb" style={{ '--orb-color': '#1E3A8A' } as any} />
+        <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] glow-orb" style={{ '--orb-color': '#0A5C36' } as React.CSSProperties} />
+        <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[40%] glow-orb" style={{ '--orb-color': '#1E3A8A' } as React.CSSProperties} />
 
         <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -53,7 +53,7 @@ const SlideWrapper = ({ children, title, subtitle, icon: Icon }: { children: Rea
     </div>
 );
 
-const Card = ({ title, children, icon: Icon, delay = 0, variant = "default" }: { title: string, children: React.ReactNode, icon?: any, delay?: number, variant?: "default" | "highlight" | "warning" | "blue" }) => {
+const Card = ({ title, children, icon: Icon, delay = 0, variant = "default" }: { title: string, children: React.ReactNode, icon?: React.ElementType, delay?: number, variant?: "default" | "highlight" | "warning" | "blue" }) => {
     const variants = {
         default: "premium-card p-8",
         highlight: "premium-card p-8 border-emerald-200/50 bg-white/80 transition-all duration-700",
@@ -120,8 +120,8 @@ export default function Presentation() {
                 <div className="flex flex-col items-center justify-center h-full text-center p-8 relative overflow-hidden">
                     {/* Unique cover background elements */}
                     <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]" />
-                    <div className="absolute top-[20%] left-[10%] w-[30%] h-[30%] glow-orb opacity-30" style={{ '--orb-color': '#0A5C36' } as any} />
-                    <div className="absolute bottom-[20%] right-[10%] w-[30%] h-[30%] glow-orb opacity-30" style={{ '--orb-color': '#1E3A8A' } as any} />
+                    <div className="absolute top-[20%] left-[10%] w-[30%] h-[30%] glow-orb opacity-30" style={{ '--orb-color': '#0A5C36' } as React.CSSProperties} />
+                    <div className="absolute bottom-[20%] right-[10%] w-[30%] h-[30%] glow-orb opacity-30" style={{ '--orb-color': '#1E3A8A' } as React.CSSProperties} />
                     
                     <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
@@ -381,7 +381,7 @@ export default function Presentation() {
                                 <div className="flex flex-col md:flex-row items-center gap-12 p-4">
                                     <div className="flex-1">
                                         <p className="text-3xl font-black text-rose-950 mb-4 tracking-tighter leading-tight italic">
-                                            &quot;Menyatukan 27 'Kepala' instansi dengan ego sektoral yang berbeda adalah tantangan birokrasi terbesar.&quot;
+                                            &quot;Menyatukan 27 &apos;Kepala&apos; instansi dengan ego sektoral yang berbeda adalah tantangan birokrasi terbesar.&quot;
                                         </p>
                                         <p className="text-lg text-rose-800/80 font-bold leading-relaxed">
                                             Transformasi digital tersendat bukan karena kekurangan gawai, melainkan karena platform yang terfragmentasi. Satu payung ekosistem digital adalah harga mati.
@@ -690,7 +690,7 @@ export default function Presentation() {
                                 { t: "Stunting Map", i: Stethoscope, delay: 0.3, v: "default" },
                                 { t: "Publik Opini", i: MessageSquare, delay: 0.4, v: "highlight" },
                             ].map((item) => (
-                                <Card key={item.t} title={item.t} icon={item.i} delay={item.delay} variant={item.v as any}>
+                                <Card key={item.t} title={item.t} icon={item.i} delay={item.delay} variant={item.v as "default" | "highlight" | "warning" | "blue"}>
                                     <p className="text-[12px] opacity-70 font-bold leading-tight">Insight strategis dari pangkalan Data Lake Cirebon.</p>
                                 </Card>
                             ))}
@@ -853,6 +853,7 @@ export default function Presentation() {
         };
         window.addEventListener("keydown", handleKeyDown);
         return () => window.removeEventListener("keydown", handleKeyDown);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [currentSlide]);
 
     return (
