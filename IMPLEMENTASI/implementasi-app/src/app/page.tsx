@@ -879,6 +879,13 @@ export default function Presentation() {
                 </div>
             </div>
 
+            {/* Page Number (Bottom Right) */}
+            <div className="fixed bottom-4 right-4 md:bottom-8 md:right-12 z-[100] pointer-events-none">
+                <div className="text-slate-400 font-black text-xs md:text-sm tracking-widest uppercase">
+                    Page <span className="text-emerald-700">{currentSlide + 1}</span> / {slides.length}
+                </div>
+            </div>
+
             {/* Main Slide Content - FIX: Using flex-1 to fill horizontal space and height properly */}
             <main className="z-10 w-full flex-1 relative flex flex-col overflow-hidden">
                 <AnimatePresence mode="wait">
