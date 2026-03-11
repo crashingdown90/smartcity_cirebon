@@ -525,130 +525,102 @@ export default function Presentation() {
                 </SlideWrapper>
             )
         },
-        // Slide 7: Evaluasi Maturitas Layanan
+        // Slide 7: Evaluasi Maturitas Layanan (App Fatigue)
         {
             content: (
-                <SlideWrapper title="Evaluasi Maturitas Layanan Elektronik Eksisting" subtitle="Analisis Kritis Tata Kelola Digital: Mengatasi Fenomena Kelelahan Digital (App Fatigue)" icon={Smartphone}>
-                    <div className="flex flex-col gap-8 h-full max-w-7xl mx-auto pb-10 pt-2">
-                        {/* Upper Section: Existing Successes */}
-                        <div className="grid md:grid-cols-3 gap-6 mb-2">
+                <SlideWrapper title="Evaluasi Maturitas Layanan Elektronik Eksisting" subtitle="Tinjauan Kritis Tata Kelola Digital: Mengatasi Fenomena Kelelahan Digital (App Fatigue)" icon={Smartphone}>
+                    <div className="flex flex-col gap-6 h-full max-w-7xl mx-auto pb-10 pt-2">
+                        {/* Upper Cards: Still useful for context */}
+                        <div className="grid md:grid-cols-3 gap-6">
                             {[
-                                { t: "Cirebon Siaga 112", d: "Layanan kedaruratan terpadu berskala kota.", i: ShieldCheck, c: "blue" },
-                                { t: "Portal I-Cirebon", d: "Optimalisasi literasi & akses informasi publik.", i: Share2, c: "indigo" },
-                                { t: "Brojol Aja Klalen", d: "Percepatan administrasi kependudukan digital.", i: FileText, c: "slate" }
+                                { t: "Cirebon Siaga 112", i: ShieldCheck, c: "blue" },
+                                { t: "Portal I-Cirebon", i: Share2, c: "indigo" },
+                                { t: "Brojol Aja Klalen", i: FileText, c: "slate" }
                             ].map((item, idx) => (
                                 <motion.div 
                                     key={item.t}
-                                    initial={{ opacity: 0, y: 20 }}
+                                    initial={{ opacity: 0, y: 10 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 * idx }}
-                                    className="bg-white/50 backdrop-blur-md p-6 rounded-[2rem] border border-slate-200/60 shadow-sm hover:shadow-md transition-all group"
+                                    className="bg-white/40 backdrop-blur-sm px-6 py-4 rounded-3xl border border-slate-200/60 shadow-sm flex items-center gap-4 group"
                                 >
-                                    <div className={`w-12 h-12 rounded-2xl bg-${item.c}-50 text-${item.c}-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                                        <item.i size={24} />
+                                    <div className={`w-10 h-10 rounded-xl bg-${item.c}-50 text-${item.c}-600 flex items-center justify-center group-hover:scale-110 transition-transform`}>
+                                        <item.i size={20} />
                                     </div>
-                                    <h4 className="text-lg font-black text-slate-900 mb-1">{item.t}</h4>
-                                    <p className="text-xs font-bold text-slate-500 leading-relaxed mb-4">{item.d}</p>
-                                    <div className="flex gap-2">
-                                        <span className={`px-3 py-1 bg-${item.c}-50 text-${item.c}-700 text-[10px] font-black uppercase rounded-full border border-${item.c}-100`}>Layanan Aktif</span>
-                                    </div>
+                                    <h4 className="text-sm font-black text-slate-800">{item.t}</h4>
                                 </motion.div>
                             ))}
                         </div>
                         
-                        {/* Main Diagnosis: Splited Layout */}
+                        {/* Main App Fatigue Banner (Matching Screenshot) */}
                         <motion.div 
-                            className="flex-1 bg-slate-950 rounded-[4rem] relative overflow-hidden flex flex-col lg:flex-row border border-slate-800 shadow-2xl"
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            className="flex-1 bg-[#2D0A14] rounded-[3rem] relative overflow-hidden flex flex-col justify-center p-10 md:p-16 border border-rose-900/40 shadow-2xl"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4 }}
                         >
-                            {/* Decorative Background Elements */}
-                            <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-rose-500/10 to-transparent pointer-events-none" />
-                            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20 pointer-events-none" />
+                            {/* Background Pattern and Glow */}
+                            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-rose-600/10 via-transparent to-transparent" />
+                            <div className="absolute -left-20 top-0 w-64 h-full bg-rose-600/10 blur-[100px] rounded-full" />
+                            <div className="absolute -right-20 bottom-0 w-64 h-full bg-emerald-600/5 blur-[100px] rounded-full" />
 
-                            {/* Left Side: Diagnosis Text */}
-                            <div className="p-10 lg:p-14 flex-1 flex flex-col justify-center space-y-8 relative z-10 border-b lg:border-b-0 lg:border-r border-slate-800/50">
-                                <div className="space-y-4">
-                                    <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-rose-500/10 text-rose-400 rounded-full font-black text-[10px] uppercase tracking-widest border border-rose-500/20">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" /> Diagnosis Tata Kelola Digital
-                                    </div>
-                                    <h3 className="text-4xl md:text-6xl font-black text-white tracking-tighter leading-[0.9]">
-                                        Fenomena <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-rose-600 italic">App Fatigue.</span>
-                                    </h3>
-                                    <p className="text-slate-400 text-lg font-medium leading-relaxed max-w-xl">
-                                        Masyarakat terbebani oleh fragmentasi aplikasi sektoral yang tidak terintegrasi, mengakibatkan redundansi data dan inefisiensi akses layanan publik.
-                                    </p>
+                            <div className="relative z-10 flex flex-col md:flex-row items-center gap-10">
+                                {/* Left Content: Typography */}
+                                <div className="flex-1 space-y-4">
+                                    <motion.h3 
+                                        className="text-white text-5xl md:text-7xl font-black leading-[0.8] tracking-tighter"
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: 0.5 }}
+                                    >
+                                        Fenomena
+                                    </motion.h3>
+                                    <motion.h4 
+                                        className="text-[#F43F5E] text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6"
+                                        initial={{ opacity: 0, x: -20 }}
+                                        animate={{ opacity: 1, x: 0 }}
+                                        transition={{ delay: 0.6 }}
+                                    >
+                                        Kelelahan Beraplikasi<br />(App Fatigue).
+                                    </motion.h4>
+                                    <motion.p 
+                                        className="text-stone-300 text-lg md:text-xl font-medium leading-relaxed max-w-2xl opacity-80"
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 0.7 }}
+                                    >
+                                        Masyarakat dibebani keharusan registrasi berulang pada puluhan aplikasi Perangkat Daerah yang belum saling terintegrasi. Hal ini berdampak langsung pada redundansi kredensial dan keengganan publik mengadopsi layanan SPBE daerah.
+                                    </motion.p>
                                 </div>
 
-                                <div className="grid grid-cols-2 gap-4">
-                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-xl">
-                                        <div className="text-rose-400 font-black text-3xl mb-1 tabular-nums tracking-tighter">27+</div>
-                                        <div className="text-slate-500 font-bold text-[10px] uppercase tracking-wider">Aplikasi Sektoral</div>
-                                    </div>
-                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10 backdrop-blur-xl">
-                                        <div className="text-emerald-400 font-black text-xs uppercase tracking-widest mb-2">Target Solusi</div>
-                                        <div className="text-white font-black text-lg leading-tight uppercase italic underline decoration-emerald-500/50">Portal Tunggal</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Right Side: The Visual Conflict/Solution */}
-                            <div className="flex-1 bg-slate-900/30 relative flex items-center justify-center p-10 overflow-hidden group">
-                                <div className="relative w-full aspect-square max-w-sm">
-                                    {/* Chaos of Apps (Background) */}
-                                    <div className="absolute inset-0 flex items-center justify-center opacity-30 group-hover:opacity-40 transition-opacity">
-                                        {[...Array(12)].map((_, i) => (
-                                            <motion.div 
-                                                key={i}
-                                                className="absolute w-12 h-12 md:w-16 md:h-16 bg-slate-800 border border-slate-700 rounded-2xl flex items-center justify-center text-slate-500 shadow-xl"
-                                                initial={{ 
-                                                    x: (Math.random() - 0.5) * 300, 
-                                                    y: (Math.random() - 0.5) * 300,
-                                                    rotate: Math.random() * 360,
-                                                    opacity: 0
-                                                }}
-                                                animate={{ 
-                                                    opacity: 1,
-                                                    x: (Math.random() - 0.5) * 260, 
-                                                    y: (Math.random() - 0.5) * 260,
-                                                    rotate: Math.random() * 360
-                                                }}
-                                                transition={{ 
-                                                    duration: 5 + Math.random() * 5, 
-                                                    repeat: Infinity, 
-                                                    repeatType: "reverse" 
-                                                }}
-                                            >
-                                                <Smartphone size={24} className="opacity-40" />
-                                            </motion.div>
-                                        ))}
-                                    </div>
-
-                                    {/* Converging Core (The Solution) */}
-                                    <div className="relative z-10 w-full h-full flex items-center justify-center">
-                                        <motion.div 
-                                            className="w-48 h-48 md:w-64 md:h-64 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-[3.5rem] p-4 shadow-[0_0_80px_rgba(16,185,129,0.3)] relative group cursor-default"
-                                            whileHover={{ scale: 1.05 }}
-                                        >
-                                            <div className="absolute inset-0 bg-white/10 rounded-[3.5rem] backdrop-blur-sm" />
-                                            <div className="relative h-full border-2 border-white/20 rounded-[2.8rem] flex flex-col items-center justify-center text-white text-center p-4">
-                                                <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-4 backdrop-blur-md shadow-inner">
-                                                    <Image src="/Logo_Cirebon.png" alt="Logo Cirebon" width={48} height={48} className="brightness-0 invert drop-shadow-[0_4px_8px_rgba(0,0,0,0.2)]" />
-                                                </div>
-                                                <div className="text-[10px] font-black uppercase tracking-[0.3em] opacity-80 mb-1">Cirebon Portal</div>
-                                                <div className="text-xl md:text-2xl font-black leading-none drop-shadow-md">SATU PINTU</div>
+                                {/* Right Side: Visual Mockup Area */}
+                                <div className="relative shrink-0 pt-8">
+                                    {/* App Grid Mockup Card */}
+                                    <div className="relative w-64 h-64 md:w-80 md:h-80 bg-stone-900/60 rounded-[3rem] border-2 border-rose-500/20 shadow-2xl backdrop-blur-xl p-8 flex items-center justify-center transform rotate-3">
+                                        <div className="grid grid-cols-3 gap-4 w-full h-full opacity-30">
+                                            {[...Array(9)].map((_, i) => (
+                                                <div key={i} className="bg-rose-500/20 rounded-2xl border border-rose-500/10" />
+                                            ))}
+                                        </div>
+                                        <div className="absolute flex items-center justify-center">
+                                            <div className="w-24 h-24 md:w-32 md:h-32 bg-rose-500/10 rounded-full flex items-center justify-center border border-rose-500/30 animate-pulse">
+                                                <AlertTriangle size={64} className="text-rose-500 drop-shadow-[0_0_20px_rgba(244,63,94,0.6)]" />
                                             </div>
-
-                                            {/* Pulse effect */}
-                                            <div className="absolute -inset-4 bg-emerald-500/20 rounded-[4rem] animate-ping opacity-40 -z-10" />
-                                        </motion.div>
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                {/* Status Badge Overlay */}
-                                <div className="absolute bottom-6 right-6 lg:bottom-10 lg:right-10 px-6 py-3 bg-white text-slate-950 font-black text-xs rounded-2xl shadow-2xl border border-slate-200 transform hover:scale-110 transition-transform flex items-center gap-3">
-                                    <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" /> STRATEGI UNIFIKASI
+
+                                    {/* Portal Tunggal Badge (Slanted) */}
+                                    <motion.div 
+                                        className="absolute -bottom-4 -right-4 md:-bottom-8 md:-right-8 bg-[#106645] text-white px-8 py-4 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.4)] border-2 border-emerald-400/30 -rotate-12 group cursor-default"
+                                        initial={{ scale: 0, rotate: 0 }}
+                                        animate={{ scale: 1, rotate: -12 }}
+                                        transition={{ type: "spring", delay: 1 }}
+                                        whileHover={{ scale: 1.1, rotate: 0 }}
+                                    >
+                                        <div className="text-[10px] font-black uppercase tracking-widest mb-1 opacity-80">Proyeksi Integrasi</div>
+                                        <div className="text-xl md:text-2xl font-black whitespace-nowrap leading-none">Portal Tunggal</div>
+                                    </motion.div>
                                 </div>
                             </div>
                         </motion.div>
