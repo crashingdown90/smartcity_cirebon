@@ -14,7 +14,7 @@ import {
 // --- Reusable Components ---
 
 const SlideWrapper = ({ children, title, subtitle, icon: Icon }: { children: React.ReactNode, title: string, subtitle: string, icon?: React.ElementType }) => (
-    <div className="flex flex-col h-full p-8 md:p-14 relative overflow-hidden bg-transparent text-slate-900">
+    <div className="flex flex-col h-full p-4 sm:p-8 md:p-14 relative overflow-hidden bg-transparent text-slate-900">
         {/* Decorative background elements for each slide */}
         <div className="absolute top-[-10%] right-[-5%] w-[40%] h-[40%] glow-orb" style={{ '--orb-color': '#0A5C36' } as React.CSSProperties} />
         <div className="absolute bottom-[-10%] left-[-5%] w-[40%] h-[40%] glow-orb" style={{ '--orb-color': '#1E3A8A' } as React.CSSProperties} />
@@ -36,7 +36,7 @@ const SlideWrapper = ({ children, title, subtitle, icon: Icon }: { children: Rea
                     </motion.div>
                 )}
                 <div>
-                    <h2 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-tight">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-tight">
                         {title}
                     </h2>
                     <div className="text-[11px] font-black text-emerald-600/60 mt-2 tracking-[0.3em] uppercase flex items-center gap-2">
@@ -140,18 +140,18 @@ export default function Presentation() {
 
                         <div className="flex flex-col lg:flex-row items-center justify-center gap-16 xl:gap-24 mb-12 text-center lg:text-left">
                             <motion.div 
-                                className="flex justify-center gap-6 flex-shrink-0 relative scale-110 lg:scale-125 xl:scale-150 py-12"
+                                className="flex justify-center gap-4 md:gap-6 flex-shrink-0 relative scale-100 sm:scale-110 lg:scale-125 xl:scale-150 py-8 md:py-12"
                                 initial={{ opacity: 0, x: -50 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.5, duration: 1 }}
                             >
-                                <div className="w-48 h-64 rounded-[2.5rem] bg-white border-[6px] border-white shadow-2xl relative overflow-hidden flex items-center justify-center z-10 rotate-[-4deg] hover:rotate-0 transition-transform duration-700">
+                                <div className="w-32 h-44 sm:w-40 sm:h-56 md:w-48 md:h-64 rounded-[2.5rem] bg-white border-[6px] border-white shadow-2xl relative overflow-hidden flex items-center justify-center z-10 rotate-[-4deg] hover:rotate-0 transition-transform duration-700">
                                     <Image src="/Walikota.png" alt="Wali Kota Cirebon" fill className="object-cover" />
                                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/70 to-transparent p-4 flex flex-col items-center">
-                                        <div className="text-white font-black text-[9px] tracking-widest uppercase">Pimpinan Daerah 01</div>
+                                        <div className="text-white font-black text-[9px] tracking-widest uppercase text-center leading-tight">Pimpinan Daerah 01</div>
                                     </div>
                                 </div>
-                                <div className="w-48 h-64 rounded-[2.5rem] bg-white border-[6px] border-white shadow-2xl relative overflow-hidden flex items-center justify-center mt-12 -ml-12 rotate-[4deg] hover:rotate-0 transition-transform duration-700 hover:z-20">
+                                <div className="w-32 h-44 sm:w-40 sm:h-56 md:w-48 md:h-64 rounded-[2.5rem] bg-white border-[6px] border-white shadow-2xl relative overflow-hidden flex items-center justify-center mt-8 md:mt-12 -ml-8 md:-ml-12 rotate-[4deg] hover:rotate-0 transition-transform duration-700 hover:z-20">
                                     <Image src="/Wakil_Walikota.png" alt="Wakil Wali Kota Cirebon" fill className="object-cover" />
                                     <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-emerald-950/95 via-emerald-950/70 to-transparent p-4 flex flex-col items-center">
                                         <div className="text-white font-black text-[9px] tracking-widest uppercase">Pimpinan Daerah 02</div>
@@ -161,7 +161,7 @@ export default function Presentation() {
 
                             <div className="max-w-2xl lg:pl-16">
                                 <motion.h1 
-                                    className="text-6xl md:text-9xl font-black text-slate-950 tracking-tighter mb-8 leading-[0.85]"
+                                    className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-slate-950 tracking-tighter mb-6 md:mb-8 leading-[0.85]"
                                     initial={{ opacity: 0, y: 30 }}
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.6, duration: 0.8 }}
@@ -769,9 +769,9 @@ export default function Presentation() {
                                 </Card>
                             </div>
                         </div>
-                        <div className="relative flex justify-center group">
+                        <div className="relative flex justify-center group scale-75 sm:scale-90 md:scale-100 origin-top">
                             <motion.div 
-                                className="w-[320px] h-[640px] bg-slate-900 rounded-[3.5rem] border-[12px] border-slate-950 shadow-2xl relative overflow-hidden flex flex-col pt-12"
+                                className="w-[320px] h-[640px] bg-slate-900 rounded-[3.5rem] border-[12px] border-slate-950 shadow-2xl relative overflow-hidden flex flex-col pt-12 shrink-0"
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 transition={{ duration: 1 }}
@@ -860,22 +860,22 @@ export default function Presentation() {
         <div className="proposal-container animated-mesh selection:bg-emerald-100 selection:text-emerald-900 relative">
             {/* Global Logo Overlay */}
             <motion.div 
-                className="fixed top-8 right-12 z-[100] pointer-events-none"
+                className="fixed top-4 right-4 md:top-8 md:right-12 z-[100] pointer-events-none"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1 }}
             >
-                <div className="p-3 bg-white/40 backdrop-blur-xl rounded-2xl border border-white/40 shadow-xl">
-                    <Image src="/Logo_Cirebon.png" alt="Logo Cirebon" width={100} height={100} className="h-16 w-auto drop-shadow-md" priority />
+                <div className="p-2 md:p-3 bg-white/40 backdrop-blur-xl rounded-2xl border border-white/40 shadow-xl">
+                    <Image src="/Logo_Cirebon.png" alt="Logo Cirebon" width={100} height={100} className="h-10 md:h-16 w-auto drop-shadow-md" priority />
                 </div>
             </motion.div>
 
             {/* Slide Navigation Progress */}
-            <div className="fixed top-8 left-12 z-[100] flex items-center gap-4">
-                <div className="h-14 flex items-center px-6 bg-white/40 backdrop-blur-xl rounded-2xl border border-white/40 shadow-xl text-emerald-950 font-black text-xl tracking-tighter">
+            <div className="fixed top-4 left-4 md:top-8 md:left-12 z-[100] flex items-center gap-4">
+                <div className="h-10 md:h-14 flex items-center px-4 md:px-6 bg-white/40 backdrop-blur-xl rounded-2xl border border-white/40 shadow-xl text-emerald-950 font-black text-lg md:text-xl tracking-tighter">
                     {String(currentSlide + 1).padStart(2, '0')}
                     <span className="mx-2 text-slate-300 font-normal">/</span>
-                    <span className="text-slate-400 text-sm">{String(slides.length).padStart(2, '0')}</span>
+                    <span className="text-slate-400 text-xs md:text-sm">{String(slides.length).padStart(2, '0')}</span>
                 </div>
             </div>
 
@@ -896,22 +896,22 @@ export default function Presentation() {
             </main>
 
             {/* Floating Premium Nav-bar */}
-            <nav className="nav-bar-floating flex items-center gap-10">
+            <nav className="nav-bar-floating flex items-center gap-4 md:gap-10">
                 <button
                     onClick={prevSlide}
                     disabled={currentSlide === 0}
                     className="btn-nav-premium group"
                     aria-label="Previous slide"
                 >
-                    <ChevronLeft size={32} className="group-active:scale-75 transition-transform" />
+                    <ChevronLeft size={28} className="md:w-8 md:h-8 group-active:scale-75 transition-transform" />
                 </button>
 
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 md:gap-4 overflow-x-auto max-w-[50vw] md:max-w-none hide-scrollbar px-2">
                     {slides.map((_, i) => (
                         <button
                             key={i}
                             onClick={() => setCurrentSlide(i)}
-                            className={`dot ${currentSlide === i ? 'active' : 'hover:bg-slate-300'}`}
+                            className={`dot shrink-0 ${currentSlide === i ? 'active' : 'hover:bg-slate-300'}`}
                             aria-label={`Go to slide ${i + 1}`}
                         />
                     ))}
@@ -923,7 +923,7 @@ export default function Presentation() {
                     className="btn-nav-premium group"
                     aria-label="Next slide"
                 >
-                    <ChevronRight size={32} className="group-active:scale-75 transition-transform" />
+                    <ChevronRight size={28} className="md:w-8 md:h-8 group-active:scale-75 transition-transform" />
                 </button>
             </nav>
         </div>

@@ -157,7 +157,7 @@
 
   /* Floating Glass Nav-bar */
   .nav-bar-floating {
-    @apply fixed bottom-8 left-1/2 -translate-x-1/2 px-10 py-4 bg-white/80 backdrop-blur-2xl border border-white/60 rounded-full z-50;
+    @apply fixed bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 px-4 md:px-10 py-3 md:py-4 bg-white/80 backdrop-blur-2xl border border-white/60 rounded-full z-50;
     box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.12);
   }
   
